@@ -62,6 +62,7 @@ const Navbar = () => {
                         <div className="absolute right-0 rtl:left-0 rtl:right-auto mt-2 w-32 bg-navy-800 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right">
                             <div className="py-2">
                                 <button onClick={() => changeLanguage('en')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">English</button>
+                                <button onClick={() => changeLanguage('de')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">Deutsch</button>
                                 <button onClick={() => changeLanguage('he')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">עברית</button>
                                 <button onClick={() => changeLanguage('ar')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">العربية</button>
                             </div>
@@ -82,6 +83,7 @@ const Navbar = () => {
                         <div className="absolute right-0 rtl:left-0 rtl:right-auto mt-2 w-32 bg-navy-800 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right">
                             <div className="py-2">
                                 <button onClick={() => changeLanguage('en')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">English</button>
+                                <button onClick={() => changeLanguage('de')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">Deutsch</button>
                                 <button onClick={() => changeLanguage('he')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">עברית</button>
                                 <button onClick={() => changeLanguage('ar')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">العربية</button>
                             </div>
