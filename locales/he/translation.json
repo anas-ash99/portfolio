@@ -1,0 +1,71 @@
+{
+    "navbar": {
+        "home": "בית",
+        "about": "אודות",
+        "skills": "כישורים",
+        "portfolio": "תיק עבודות",
+        "experience": "ניסיון",
+        "contact": "צור קשר",
+        "resume": "קורות חיים"
+    },
+    "hero": {
+        "greeting": "היי, אני",
+        "role": "סטודנט למדעי המחשב ומפתח תוכנה",
+        "tagline": "בונה אפליקציות Cloud-Native וחוויות מובייל."
+    },
+    "about": {
+        "title": "אודותיי",
+        "description": "אני סטודנט למדעי המחשב בעל מוטיבציה גבוהה עם ניסיון מעשי בפיתוח תוכנה, מחשוב ענן ועיצוב אפליקציות מובייל. עם למעלה מארבע שנות ניסיון בפרויקטים אישיים ומקצועיים ב-Kotlin, Go ו-Java, אני משלב למידה אקדמית עם כישורים מעשיים. אני להוט לתרום כסטודנט עובד בצוות דינמי, ליישם את כישוריי באתגרים בעולם האמיתי ולהמשיך לצמוח כמהנדס תוכנה.",
+        "downloadResume": "הורד קורות חיים",
+        "languagesTitle": "שפות",
+        "languages": "ערבית (שפת אם), אנגלית (שוטפת), גרמנית (מתקדמת), עברית (בינונית)"
+    },
+    "skills": {
+        "title": "כישורים"
+    },
+    "portfolio": {
+        "title": "פרויקטים נבחרים",
+        "viewAll": "צפה בכל הפרויקטים",
+        "commu": {
+            "title": "Commu (אפליקציית הודעות)",
+            "description": "אפליקציית הודעות מודרנית שנבנתה עם Go ו-WebSocket לתקשורת בזמן אמת."
+        },
+        "astra": {
+            "title": "Astra AI",
+            "description": "עוזר צ'אט חכם הממנף את מודלי השפה של OpenAI ו-Jetpack Compose."
+        },
+        "microservices": {
+            "title": "Microservices & K8s",
+            "description": "אפליקציית מיקרו-שירותים Cloud-Native המשתמשת ב-Java, Go ו-Kubernetes."
+        }
+    },
+    "experience": {
+        "title": "ניסיון והשכלה",
+        "easy_software": {
+            "role": "מתמחה בפיתוח תוכנה",
+            "company": "Easy Software",
+            "period": "ספטמבר 2023 - ינואר 2025"
+        },
+        "hit": {
+            "degree": "תואר ראשון במדעי המחשב",
+            "school": "מכון טכנולוגי חולון",
+            "period": "נוכחי"
+        }
+    },
+    "contact": {
+        "title": "צור קשר",
+        "name": "שם",
+        "email": "אימייל",
+        "message": "הודעה",
+        "send": "שלח הודעה",
+        "success": "ההודעה נשלחה בהצלחה!",
+        "info": {
+            "phone": "0546064916",
+            "email": "ash.anas099@gmail.com",
+            "linkedin": "פרופיל LinkedIn"
+        }
+    },
+    "footer": {
+        "copyright": "© 2025 Anas Ashraf. כל הזכויות שמורות."
+    }
+}
