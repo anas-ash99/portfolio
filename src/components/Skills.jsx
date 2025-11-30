@@ -3,7 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 const skills = [
-    "Mobile Development (Flutter & Android)", "Cloud-Native Applications",
+    "Android Mobile Development (Jetpack Compose)", "Cloud-Native Applications",
     "System Design & Architecture", "DevOps", "Databases",
     "Prompt Engineering", "Scrum / Teamwork", "Quick Learner"
 ];
