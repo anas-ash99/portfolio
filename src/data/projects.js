@@ -11,8 +11,8 @@ export const projects = [
         id: 'commu',
         key: 'commu',
         github: '#',
-        gitlab: 'https://gitlab.com/commu',
-        external: 'https://gitlab.com/commu',
+        gitlab: 'https://gitlab.com/commu-app',
+        external: 'https://gitlab.com/commu-app',
         tags: ['Go', 'WebSocket', 'Message Queue']
     },
     {
