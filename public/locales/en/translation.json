@@ -1,0 +1,71 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "portfolio": "Portfolio",
+        "experience": "Experience",
+        "contact": "Contact",
+        "resume": "Resume"
+    },
+    "hero": {
+        "greeting": "Hi, I'm",
+        "role": "Computer Science Student & Software Developer",
+        "tagline": "Building cloud-native applications and mobile experiences."
+    },
+    "about": {
+        "title": "About Me",
+        "description": "I am a motivated Computer Science student with hands-on experience in software development, cloud computing, and mobile app design. With over four years of personal and professional project experience in Kotlin, Go, and Java, I combine academic learning with practical skills. I am eager to contribute as a working student in a dynamic team, applying my skills to real-world challenges while continuing to grow as a software engineer.",
+        "downloadResume": "Download Resume",
+        "languagesTitle": "Languages",
+        "languages": "Arabic (Native), English (Fluent), German (Advanced), Hebrew (Intermediate)"
+    },
+    "skills": {
+        "title": "Skills"
+    },
+    "portfolio": {
+        "title": "Featured Projects",
+        "viewAll": "View All Projects",
+        "commu": {
+            "title": "Commu (Messaging App)",
+            "description": "A modern messaging app built with Go and WebSocket for real-time communication."
+        },
+        "astra": {
+            "title": "Astra AI",
+            "description": "Intelligent chat assistant leveraging OpenAI's LLMs and Jetpack Compose."
+        },
+        "microservices": {
+            "title": "Microservices & K8s",
+            "description": "Cloud-native microservices app using Java, Go, and Kubernetes."
+        }
+    },
+    "experience": {
+        "title": "Experience & Education",
+        "easy_software": {
+            "role": "Software Development Trainee",
+            "company": "Easy Software",
+            "period": "Sep 2023 - Jan 2025"
+        },
+        "hit": {
+            "degree": "B.Sc. Computer Science",
+            "school": "Holon Institute of Technology",
+            "period": "Current"
+        }
+    },
+    "contact": {
+        "title": "Get In Touch",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send Message",
+        "success": "Message sent successfully!",
+        "info": {
+            "phone": "0546064916",
+            "email": "ash.anas099@gmail.com",
+            "linkedin": "LinkedIn Profile"
+        }
+    },
+    "footer": {
+        "copyright": "© 2025 Anas Ashraf. All rights reserved."
+    }
+}
