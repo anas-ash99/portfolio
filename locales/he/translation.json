@@ -10,7 +10,7 @@
     },
     "hero": {
         "greeting": "היי, אני",
-        "name": "אנס אשרף.",
+        "name": "אנס אשראף.",
         "role": "סטודנט למדעי המחשב ומפתח תוכנה",
         "tagline": "בונה אפליקציות Cloud-Native וחוויות מובייל.",
         "cta": "צפו בעבודות שלי!"
@@ -51,7 +51,7 @@
         "hit": {
             "degree": "תואר ראשון במדעי המחשב",
             "school": "מכון טכנולוגי חולון",
-            "period": "נוכחי"
+            "period": "2025 - 2028"
         }
     },
     "contact": {
@@ -64,7 +64,7 @@
         "info": {
             "phone": "0546064916",
             "email": "ash.anas099@gmail.com",
-            "linkedin": "פרופיל LinkedIn"
+            "linkedin": "LinkedIn Profile"
         }
     },
     "footer": {

@@ -10,7 +10,7 @@
     },
     "hero": {
         "greeting": "مرحباً، أنا",
-        "name": "أنس أشرف.",
+        "name": "أنس أشراف.",
         "role": "طالب علوم حاسوب ومطور برمجيات",
         "tagline": "بناء تطبيقات سحابية وتجارب الجوال.",
         "cta": "شاهد أعمالي!"
@@ -51,7 +51,7 @@
         "hit": {
             "degree": "بكالوريوس علوم الحاسوب",
             "school": "معهد حولون للتكنولوجيا",
-            "period": "حالياً"
+            "period": "2025 - 2028"
         }
     },
     "contact": {
@@ -64,7 +64,7 @@
         "info": {
             "phone": "0546064916",
             "email": "ash.anas099@gmail.com",
-            "linkedin": "ملف LinkedIn"
+            "linkedin": "LinkedIn Profile"
         }
     },
     "footer": {

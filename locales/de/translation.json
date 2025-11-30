@@ -1,0 +1,73 @@
+{
+    "navbar": {
+        "home": "Startseite",
+        "about": "Über mich",
+        "skills": "Fähigkeiten",
+        "portfolio": "Portfolio",
+        "experience": "Erfahrung",
+        "contact": "Kontakt",
+        "resume": "Lebenslauf"
+    },
+    "hero": {
+        "greeting": "Hallo, ich bin",
+        "name": "Anas Ashraf.",
+        "role": "Informatikstudent & Softwareentwickler",
+        "tagline": "Entwicklung von Cloud-Native-Anwendungen und mobilen Erlebnissen.",
+        "cta": "Sieh dir meine Arbeit an!"
+    },
+    "about": {
+        "title": "Über mich",
+        "description": "Ich bin ein motivierter Informatikstudent mit praktischer Erfahrung in Softwareentwicklung, Cloud Computing und Mobile App Design. Mit über vier Jahren Erfahrung in persönlichen und professionellen Projekten in Kotlin, Go und Java kombiniere ich akademisches Lernen mit praktischen Fähigkeiten. Ich bin bestrebt, als Werkstudent in einem dynamischen Team beizutragen und meine Fähigkeiten auf reale Herausforderungen anzuwenden, während ich mich als Softwareingenieur weiterentwickle.",
+        "downloadResume": "Lebenslauf herunterladen",
+        "languagesTitle": "Sprachen",
+        "languages": "Arabisch (Muttersprache), Englisch (Fließend), Deutsch (Fortgeschritten), Hebräisch (Mittelstufe)"
+    },
+    "skills": {
+        "title": "Fähigkeiten"
+    },
+    "portfolio": {
+        "title": "Ausgewählte Projekte",
+        "viewAll": "Alle Projekte ansehen",
+        "commu": {
+            "title": "Commu (Messaging App)",
+            "description": "Eine moderne Messaging-App, entwickelt mit Go und WebSocket für Echtzeitkommunikation."
+        },
+        "astra": {
+            "title": "Astra AI",
+            "description": "Intelligenter Chat-Assistent, der OpenAIs LLMs und Jetpack Compose nutzt."
+        },
+        "microservices": {
+            "title": "Microservices & K8s",
+            "description": "Cloud-native Microservices-App mit Java, Go und Kubernetes."
+        }
+    },
+    "experience": {
+        "title": "Erfahrung & Ausbildung",
+        "easy_software": {
+            "role": "Softwareentwicklungs-Trainee",
+            "company": "Easy Software",
+            "period": "Sep 2023 - Jan 2025"
+        },
+        "hit": {
+            "degree": "B.Sc. Informatik",
+            "school": "Holon Institute of Technology",
+            "period": "2025 - 2028"
+        }
+    },
+    "contact": {
+        "title": "Kontaktieren Sie mich",
+        "name": "Name",
+        "email": "E-Mail",
+        "message": "Nachricht",
+        "send": "Nachricht senden",
+        "success": "Nachricht erfolgreich gesendet!",
+        "info": {
+            "phone": "0546064916",
+            "email": "ash.anas099@gmail.com",
+            "linkedin": "LinkedIn Profile"
+        }
+    },
+    "footer": {
+        "copyright": "© 2025 Anas Ashraf. Alle Rechte vorbehalten."
+    }
+}
