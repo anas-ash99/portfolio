@@ -68,7 +68,7 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="border border-teal-400 text-teal-400 px-4 py-2 rounded hover:bg-teal-400/10 transition-colors text-sm font-medium">
+                    <a href="resume.pdf" target="_blank" rel="noopener noreferrer" className="border border-teal-400 text-teal-400 px-4 py-2 rounded hover:bg-teal-400/10 transition-colors text-sm font-medium">
                         {t('navbar.resume')}
                     </a>
                 </div>
@@ -109,7 +109,7 @@ const Navbar = () => {
                             {link.name}
                         </Link>
                     ))}
-                    <a href="/resume.pdf" className="border border-teal-400 text-teal-400 px-8 py-3 rounded hover:bg-teal-400/10 transition-colors text-lg font-medium">
+                    <a href="resume.pdf" className="border border-teal-400 text-teal-400 px-8 py-3 rounded hover:bg-teal-400/10 transition-colors text-lg font-medium">
                         {t('navbar.resume')}
                     </a>
                 </div>

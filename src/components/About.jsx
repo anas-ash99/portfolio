@@ -25,7 +25,7 @@ const About = () => {
                         <p className="text-slate-400">{t('about.languages')}</p>
                     </div>
                     <a
-                        href="/resume.pdf"
+                        href="resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block border border-teal-400 text-teal-400 px-6 py-3 rounded hover:bg-teal-400/10 transition-colors font-mono text-sm"
