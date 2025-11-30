@@ -7,7 +7,19 @@ import { cn } from '../lib/utils';
 const Navbar = () => {
     const { t, i18n } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
+    const [isLangOpen, setIsLangOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (isLangOpen && !event.target.closest('.lang-dropdown-container')) {
+                setIsLangOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => document.removeEventListener('mousedown', handleClickOutside);
+    }, [isLangOpen]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -22,6 +34,7 @@ const Navbar = () => {
         document.documentElement.dir = i18n.dir(lng);
         document.documentElement.lang = lng;
         setIsOpen(false);
+        setIsLangOpen(false);
     };
 
     const navLinks = [
@@ -34,66 +47,80 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className={cn(
-            "fixed top-0 w-full z-50 transition-all duration-300",
-            scrolled ? "bg-navy-900/90 backdrop-blur-md shadow-lg py-4" : "bg-transparent py-6"
-        )}>
-            <div className="container mx-auto px-6 flex justify-between items-center">
-                <Link to="/" className="text-teal-400 text-2xl font-bold font-mono">
-                    &lt;Anas /&gt;
-                </Link>
+        <>
+            <nav className={cn(
+                "fixed top-0 w-full z-50 transition-all duration-300",
+                scrolled ? "bg-navy-900/90 backdrop-blur-md shadow-lg py-4" : "bg-transparent py-6"
+            )}>
+                <div className="container mx-auto px-6 flex justify-between items-center">
+                    <Link to="/" className="text-teal-400 text-2xl font-bold font-mono">
+                        &lt;Anas /&gt;
+                    </Link>
 
-                {/* Desktop Menu */}
-                <div className="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
-                    {navLinks.map((link) => (
-                        <Link
-                            key={link.name}
-                            to={link.href.startsWith('#') ? `/${link.href}` : link.href}
-                            className="text-slate-200 hover:text-teal-400 transition-colors text-sm font-medium"
-                        >
-                            {link.name}
-                        </Link>
-                    ))}
+                    {/* Desktop Menu */}
+                    <div className="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
+                        {navLinks.map((link) => (
+                            <Link
+                                key={link.name}
+                                to={link.href.startsWith('#') ? `/${link.href}` : link.href}
+                                className="text-slate-200 hover:text-teal-400 transition-colors text-sm font-medium"
+                            >
+                                {link.name}
+                            </Link>
+                        ))}
 
-                    <div className="relative group">
-                        <button className="flex items-center text-slate-200 hover:text-teal-400 transition-colors">
-                            <Globe className="w-5 h-5" />
-                        </button>
-                        <div className="absolute right-0 rtl:left-0 rtl:right-auto mt-2 w-32 bg-navy-800 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right">
-                            <div className="py-2">
-                                <button onClick={() => changeLanguage('en')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">English</button>
-                                <button onClick={() => changeLanguage('de')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">Deutsch</button>
-                                <button onClick={() => changeLanguage('he')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">עברית</button>
-                                <button onClick={() => changeLanguage('ar')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">العربية</button>
+                        <div className="relative lang-dropdown-container">
+                            <button
+                                onClick={() => setIsLangOpen(!isLangOpen)}
+                                className="flex items-center text-slate-200 hover:text-teal-400 transition-colors"
+                            >
+                                <Globe className="w-5 h-5" />
+                            </button>
+                            <div className={cn(
+                                "absolute right-0 rtl:left-0 rtl:right-auto mt-2 w-32 bg-navy-800 rounded-md shadow-xl transition-all duration-200 transform origin-top-right",
+                                isLangOpen ? "opacity-100 visible scale-100" : "opacity-0 invisible scale-95"
+                            )}>
+                                <div className="py-2">
+                                    <button onClick={() => changeLanguage('en')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">English</button>
+                                    <button onClick={() => changeLanguage('de')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">Deutsch</button>
+                                    <button onClick={() => changeLanguage('he')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">עברית</button>
+                                    <button onClick={() => changeLanguage('ar')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">العربية</button>
+                                </div>
                             </div>
                         </div>
+
+                        <a href="resume.pdf" target="_blank" rel="noopener noreferrer" className="border border-teal-400 text-teal-400 px-4 py-2 rounded hover:bg-teal-400/10 transition-colors text-sm font-medium">
+                            {t('navbar.resume')}
+                        </a>
                     </div>
 
-                    <a href="resume.pdf" target="_blank" rel="noopener noreferrer" className="border border-teal-400 text-teal-400 px-4 py-2 rounded hover:bg-teal-400/10 transition-colors text-sm font-medium">
-                        {t('navbar.resume')}
-                    </a>
-                </div>
-
-                {/* Mobile Menu Button */}
-                <div className="md:hidden flex items-center gap-4">
-                    <div className="relative group">
-                        <button className="flex items-center text-slate-200 hover:text-teal-400 transition-colors">
-                            <Globe className="w-5 h-5" />
-                        </button>
-                        <div className="absolute right-0 rtl:left-0 rtl:right-auto mt-2 w-32 bg-navy-800 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right">
-                            <div className="py-2">
-                                <button onClick={() => changeLanguage('en')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">English</button>
-                                <button onClick={() => changeLanguage('de')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">Deutsch</button>
-                                <button onClick={() => changeLanguage('he')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">עברית</button>
-                                <button onClick={() => changeLanguage('ar')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">العربية</button>
+                    {/* Mobile Menu Button */}
+                    <div className="md:hidden flex items-center gap-4">
+                        <div className="relative lang-dropdown-container">
+                            <button
+                                onClick={() => setIsLangOpen(!isLangOpen)}
+                                className="flex items-center text-slate-200 hover:text-teal-400 transition-colors"
+                            >
+                                <Globe className="w-5 h-5" />
+                            </button>
+                            <div className={cn(
+                                "absolute right-0 rtl:left-0 rtl:right-auto mt-2 w-32 bg-navy-800 rounded-md shadow-xl transition-all duration-200 transform origin-top-right",
+                                isLangOpen ? "opacity-100 visible scale-100" : "opacity-0 invisible scale-95"
+                            )}>
+                                <div className="py-2">
+                                    <button onClick={() => changeLanguage('en')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">English</button>
+                                    <button onClick={() => changeLanguage('de')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">Deutsch</button>
+                                    <button onClick={() => changeLanguage('he')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">עברית</button>
+                                    <button onClick={() => changeLanguage('ar')} className="block w-full text-left rtl:text-right px-4 py-2 text-sm text-slate-200 hover:bg-navy-900 hover:text-teal-400">العربية</button>
+                                </div>
                             </div>
                         </div>
+                        <button onClick={() => setIsOpen(!isOpen)} className="text-teal-400">
+                            {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
+                        </button>
                     </div>
-                    <button onClick={() => setIsOpen(!isOpen)} className="text-teal-400">
-                        {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
-                    </button>
                 </div>
-            </div>
+            </nav>
 
             {/* Mobile Menu Overlay */}
             <div className={cn(
@@ -116,7 +143,7 @@ const Navbar = () => {
                     </a>
                 </div>
             </div>
-        </nav>
+        </>
     );
 };
 
