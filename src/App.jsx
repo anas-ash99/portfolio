@@ -15,7 +15,7 @@ function App() {
   }, [i18n, i18n.language]);
 
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <ScrollToHash />
       <div className="bg-navy-900 min-h-screen text-slate-200 selection:bg-teal-400 selection:text-navy-900 font-sans">
         <Navbar />
