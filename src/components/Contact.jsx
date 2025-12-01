@@ -4,17 +4,42 @@ import { useTranslation } from 'react-i18next';
 const Contact = () => {
     const { t } = useTranslation();
     const [submitted, setSubmitted] = useState(false);
+    const [state, setState] = useState({
+        submitting: false,
+        succeeded: false,
+        errors: []
+    });
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        setState({ ...state, submitting: true });
         const formData = new FormData(e.target);
-        console.log({
-            name: formData.get('name'),
-            email: formData.get('email'),
-            message: formData.get('message')
-        });
-        setSubmitted(true);
-        setTimeout(() => setSubmitted(false), 3000);
+
+        try {
+            const response = await fetch("https://formspree.io/f/xpwvdenz", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                setSubmitted(true);
+                setState({ submitting: false, succeeded: true, errors: [] });
+                e.target.reset();
+                setTimeout(() => setSubmitted(false), 5000);
+            } else {
+                const data = await response.json();
+                if (Object.hasOwn(data, 'errors')) {
+                    setState({ submitting: false, succeeded: false, errors: data.errors.map(err => err.message) });
+                } else {
+                    setState({ submitting: false, succeeded: false, errors: ["There was a problem submitting your form"] });
+                }
+            }
+        } catch (error) {
+            setState({ submitting: false, succeeded: false, errors: ["There was a problem submitting your form"] });
+        }
     };
 
     return (
@@ -64,14 +89,20 @@ const Contact = () => {
                 </div>
                 <button
                     type="submit"
-                    className="w-full border border-teal-400 text-teal-400 px-6 py-3 rounded hover:bg-teal-400/10 transition-colors font-mono text-sm"
+                    disabled={state.submitting}
+                    className="w-full border border-teal-400 text-teal-400 px-6 py-3 rounded hover:bg-teal-400/10 transition-colors font-mono text-sm disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                    {t('contact.send')}
+                    {state.submitting ? 'Sending...' : t('contact.send')}
                 </button>
                 {submitted && (
                     <p className="text-teal-400 text-center mt-4 animate-fade-in-up">
                         {t('contact.success')}
                     </p>
+                )}
+                {state.errors.length > 0 && (
+                    <div className="text-red-500 text-center mt-4 animate-fade-in-up">
+                        <p>{t('contact.error')}</p>
+                    </div>
                 )}
             </form>
         </section>
