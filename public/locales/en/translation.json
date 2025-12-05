@@ -30,7 +30,8 @@
         "viewAll": "View All Projects",
         "commu": {
             "title": "Commu (Messaging App)",
-            "description": "A modern messaging app built with Go and WebSocket for real-time communication."
+            "description": "A modern messaging app built with Go and WebSocket for real-time communication.",
+            "longDescription": "Commu is a robust real-time messaging application designed to provide seamless communication. Built with a backend in Go, it leverages WebSockets to ensure instant message delivery. The architecture is designed for scalability and performance, utilizing message queues for reliable data processing. The frontend provides a responsive and intuitive user interface."
         },
         "tidoco": {
             "title": "Tidoco",
@@ -43,6 +44,10 @@
         "microservices": {
             "title": "Microservices & K8s",
             "description": "Cloud-native microservices app using Java, Go, and Kubernetes."
+        },
+        "zavvo": {
+            "title": "Zavvo (Gift Card Marketplace)",
+            "description": "Event-driven microservices platform for digital gift cards."
         }
     },
     "experience": {

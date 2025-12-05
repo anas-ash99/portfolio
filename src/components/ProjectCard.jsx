@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { ExternalLink, Github, Gitlab } from 'lucide-react';
 
 const ProjectCard = ({ project }) => {
@@ -7,7 +8,7 @@ const ProjectCard = ({ project }) => {
 
     return (
         <div className="bg-navy-800 p-6 rounded-lg hover:-translate-y-2 transition-transform duration-300 group relative flex flex-col h-full">
-            <a href={project.external} target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-0"></a>
+            <Link to={`/project/${project.id}`} className="absolute inset-0 z-0"></Link>
             <div className="flex justify-between items-center mb-4 relative z-10">
                 <div className="flex gap-4">
                     {/* <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-teal-300 transition-colors">
@@ -28,7 +29,7 @@ const ProjectCard = ({ project }) => {
                 {t(`portfolio.${project.key}.description`)}
             </p>
             <div className="flex gap-3 text-xs font-mono text-slate-400 mt-auto">
-                {project.tags.map((tag, index) => (
+                {project.tags.slice(0, 3).map((tag, index) => (
                     <span key={index}>{tag}</span>
                 ))}
             </div>

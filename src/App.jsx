@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import ScrollToHash from './components/ScrollToHash';
 import Home from './pages/Home';
 import AllProjects from './pages/AllProjects';
+import ProjectDetails from './pages/ProjectDetails';
 
 function App() {
   const { i18n } = useTranslation();
@@ -23,6 +24,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/all-projects" element={<AllProjects />} />
+            <Route path="/project/:id" element={<ProjectDetails />} />
           </Routes>
         </main>
       </div>
