@@ -20,7 +20,7 @@ function App() {
       <ScrollToHash />
       <div className="bg-navy-900 min-h-screen text-slate-200 selection:bg-teal-400 selection:text-navy-900 font-sans">
         <Navbar />
-        <main className="container mx-auto px-6 md:px-12 lg:px-24">
+        <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/all-projects" element={<AllProjects />} />

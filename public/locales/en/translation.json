@@ -50,6 +50,18 @@
             "description": "Event-driven microservices platform for digital gift cards."
         }
     },
+    "projectDetails": {
+        "notFound": "Project not found",
+        "backToProjects": "Back to Projects",
+        "sourceCode": "Source Code",
+        "description": "Description",
+        "systemArchitecture": "System Architecture",
+        "clickToExpand": "Click to expand",
+        "technologies": "Technologies",
+        "reset": "Reset",
+        "noImages": "No images available",
+        "screenshot": "Project screenshot"
+    },
     "experience": {
         "title": "Experience & Education",
         "easy_software": {

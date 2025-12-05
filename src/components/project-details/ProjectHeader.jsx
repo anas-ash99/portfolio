@@ -18,7 +18,7 @@ const ProjectHeader = ({ project }) => {
                 {project.gitlab && (
                     <a href={project.gitlab} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-slate-400 hover:text-teal-400 transition-colors">
                         <Gitlab className="w-6 h-6" />
-                        <span className="font-medium">Source Code</span>
+                        <span className="font-medium">{t('projectDetails.sourceCode')}</span>
                     </a>
                 )}
                 {project.external && project.external !== '#' && (

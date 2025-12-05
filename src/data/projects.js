@@ -1,3 +1,6 @@
+
+import { longDescriptions } from './longDescriptions';
+
 export const projects = [
     {
         id: 'tidoco',
@@ -6,6 +9,7 @@ export const projects = [
         gitlab: 'https://gitlab.com/tidoco',
         architectureChart: "https://storage.googleapis.com/portfolio-bucket-99/system_design_commu.jpeg",
         external: null,
+        longDescription: longDescriptions.tidoco,
         tags: ['Kotlin', 'Spring Boot', 'System Design'],
 
     },
@@ -14,9 +18,10 @@ export const projects = [
         key: 'commu',
         github: '#',
         gitlab: 'https://gitlab.com/commu-app',
-        architectureChart: "https://placehold.co/800x600/1e293b/teal?text=System+Architecture+Chart",
+        architectureChart: "https://storage.googleapis.com/portfolio-bucket-99/Commu%20system%20design.png",
         external: null,
         tags: ['Go', 'WebSocket', 'Message Queue'],
+        longDescription: longDescriptions.commu,
         media: [
             {
                 type: 'image',
@@ -32,7 +37,7 @@ export const projects = [
         gitlab: 'https://gitlab.com/astra-ai',
         external: 'https://www.linkedin.com/posts/anas-ashraf-dev_androiddev-kotlin-sideproject-activity-7173628132602560512-C37L?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC2kNGoBuvK-hWWFEq5pWtNd_JnRg1J4Nhw',
         tags: ['Jetpack Compose', 'AI', 'Kotlin'],
-        longDescription: "Astra AI is a cutting-edge intelligent chat assistant designed to revolutionize how users interact with AI. Built using Jetpack Compose for a modern, reactive UI, it leverages OpenAI's powerful Large Language Models to provide accurate and context-aware responses. The application features a robust architecture that ensures low latency and high availability, making it suitable for both casual conversation and complex problem-solving tasks.",
+        longDescription: longDescriptions.astra,
         architectureChart: null,
         media: [
             {
@@ -65,11 +70,11 @@ export const projects = [
     {
         id: 'zavvo',
         key: 'zavvo',
-        architectureChart: "https://placehold.co/800x600/1e293b/teal?text=Zavvo+Architecture",
+        architectureChart: "https://storage.googleapis.com/portfolio-bucket-99/Zavvo%20design.png",
         github: '#',
         gitlab: 'https://gitlab.com/zavvo',
         external: null,
-        tags: ['Java', 'Spring Boot', 'Kafka', 'Kubernetes', 'Android', 'Kotlin'],
+        tags: ['Java', 'Spring Boot', 'Kafka', 'Kubernetes', 'Android', 'Kotlin', 'SQL', 'NoSQL', 'REST', 'JWT', 'OAuth', 'Docker', 'K8s', 'Jenkins', 'GitLab', 'Jira', 'Confluence', 'Jenkins', 'GitLab', 'Jira', 'Confluence'],
         media: [
             {
                 type: 'image',
@@ -87,27 +92,7 @@ export const projects = [
                 caption: 'Buy '
             },
         ],
-        longDescription: `Zavvo is a specialized gift card marketplace platform designed to facilitate the purchasing, management, and redemption of digital gift cards.
-
-Built on a robust event-driven microservices architecture, it ensures scalability and reliability for handling financial transactions and inventory management.
-
-System Overview
-Core Functionality: Users can browse a variety of stores, purchase gift cards, and redeem them directly through the application.
-User Interface: A native Android mobile application (Kotlin) serves as the primary customer touchpoint, offering a seamless experience for managing a digital wallet of gift cards.
-
-Technical Architecture
-The backend is composed of decoupled Java/Spring Boot microservices that communicate asynchronously via Apache Kafka:
-
-card_service: The core engine for gift card lifecycle management (generation, activation, redemption, and balance tracking).
-store_service: Manages the catalog of supported retailers and their specific gift card policies.
-payment_service & transaction_service: Securely handle payment processing and maintain an immutable ledger of all purchase and redemption activities.
-user_service: Handles user profiles, authentication, and wallet associations.
-broker_service: Orchestrates event streaming, ensuring that actions like "Payment Completed" trigger downstream effects like "Issue Card" or "Send Email" without tight coupling.
-email_service: Delivers transactional emails (e.g., purchase receipts, gift card codes).
-
-Infrastructure
-Containerization: Services are Dockerized for consistent deployment environments.
-Orchestration: Deployed using Kubernetes (managed via Kustomize), allowing for independent scaling of high-demand services like payments or card lookups.`,
+        longDescription: longDescriptions.zavvo,
     },
     {
         id: 'microservices',
@@ -116,7 +101,8 @@ Orchestration: Deployed using Kubernetes (managed via Kustomize), allowing for i
         github: '#',
         gitlab: 'https://gitlab.com/microservices-kubernetes',
         external: null,
-        tags: ['Java', 'CI/CD', "GO", 'Kubernetes']
+        longDescription: longDescriptions.microservices,
+        tags: ['Java', 'CI/CD', "GO", 'Kubernetes', 'Docker', 'Jenkins', 'GitHub Actions', 'Jira', 'MongoDB', 'PostgreSQL', 'Redis', 'API Gateway']
     },
 
 ];

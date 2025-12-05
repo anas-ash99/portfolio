@@ -10,7 +10,7 @@ const AllProjects = () => {
 
     return (
         <div className="pt-24 min-h-screen flex flex-col">
-            <div className="flex-grow container mx-auto px-6">
+            <div className="flex-grow container mx-auto px-6 md:px-12 lg:px-24">
                 <h1 className="text-4xl font-bold text-slate-200 mb-8">{t('portfolio.viewAll')}</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project) => (

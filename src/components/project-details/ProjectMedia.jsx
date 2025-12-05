@@ -1,6 +1,9 @@
 import React from 'react';
 
+import { useTranslation } from 'react-i18next';
+
 const ProjectMedia = ({ project }) => {
+    const { t } = useTranslation();
     // Check if project has media defined
     const hasMedia = project.media && project.media.length > 0;
 
@@ -28,7 +31,7 @@ const ProjectMedia = ({ project }) => {
                 <div className="bg-navy-800 aspect-video rounded-lg flex items-center justify-center border-2 border-dashed border-slate-700 hover:border-teal-400/50 transition-colors group">
                     <div className="text-center">
                         <span className="block text-4xl mb-2">🖼️</span>
-                        <span className="text-slate-500 group-hover:text-teal-400 transition-colors">No images available</span>
+                        <span className="text-slate-500 group-hover:text-teal-400 transition-colors">{t('projectDetails.noImages')}</span>
                     </div>
                 </div>
             </div>
@@ -52,7 +55,7 @@ const ProjectMedia = ({ project }) => {
                         {item.type === 'image' && (
                             <img
                                 src={item.url}
-                                alt={item.caption || `Project screenshot ${index + 1}`}
+                                alt={item.caption || `${t('projectDetails.screenshot')} ${index + 1}`}
                                 // Removed flex-grow, added h-auto to respect natural aspect ratio
                                 className="w-full h-auto object-cover"
                             />
