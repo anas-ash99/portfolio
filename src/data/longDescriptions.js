@@ -125,7 +125,7 @@ Commu demonstrates a complete production-grade messaging platform built with mod
 📱 Commu – تطبيق مراسلة في الوقت الفعلي
 Commu هو تطبيق مراسلة متكامل مصمم للسرعة والموثوقية وسهولة الاستخدام الحديثة. يوفر تواصلاً سلساً في الوقت الفعلي مع تجربة Android سريعة الاستجابة وخلفية عالية الأداء.
 
-🎨 واجهة Android الأمامية
+🎨 Android Front-End
  إطار العمل: Jetpack Compose
  التصميم: واجهة مستخدم تفاعلية حديثة مع رسوم متحركة سلسة
  الاتصال: اتصال WebSocket دائم للمراسلة المباشرة

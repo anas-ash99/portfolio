@@ -7,7 +7,6 @@ import ProjectNavigation from '../components/project-details/ProjectNavigation';
 import ProjectHeader from '../components/project-details/ProjectHeader';
 import ProjectInfo from '../components/project-details/ProjectInfo';
 import ProjectMedia from '../components/project-details/ProjectMedia';
-import SmartTextViewer from '../components/project-details/SmartTextViewer';
 
 
 const ProjectDetails = () => {
