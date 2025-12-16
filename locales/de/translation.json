@@ -45,6 +45,18 @@
             "description": "Cloud-native Microservices-App mit Java, Go und Kubernetes."
         }
     },
+    "projectDetails": {
+        "notFound": "Projekt nicht gefunden",
+        "backToProjects": "Zurück zu den Projekten",
+        "sourceCode": "Quellcode",
+        "description": "Beschreibung",
+        "systemArchitecture": "Systemarchitektur",
+        "clickToExpand": "Zum Vergrößern klicken",
+        "technologies": "Technologien",
+        "reset": "Zurücksetzen",
+        "noImages": "Keine Bilder verfügbar",
+        "screenshot": "Projekt-Screenshot"
+    },
     "experience": {
         "title": "Erfahrung & Ausbildung",
         "easy_software": {

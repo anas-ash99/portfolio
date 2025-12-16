@@ -45,6 +45,18 @@
             "description": "אפליקציית מיקרו-שירותים Cloud-Native המשתמשת ב-Java, Go ו-Kubernetes."
         }
     },
+    "projectDetails": {
+        "notFound": "הפרויקט לא נמצא",
+        "backToProjects": "חזרה לפרויקטים",
+        "sourceCode": "קוד מקור",
+        "description": "תיאור",
+        "systemArchitecture": "ארכיטקטורת מערכת",
+        "clickToExpand": "לחץ להגדלה",
+        "technologies": "טכנולוגיות",
+        "reset": "איפוס",
+        "noImages": "אין תמונות זמינות",
+        "screenshot": "צילום מסך של הפרויקט"
+    },
     "experience": {
         "title": "ניסיון והשכלה",
         "easy_software": {

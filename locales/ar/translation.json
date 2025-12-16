@@ -45,6 +45,18 @@
             "description": "تطبيق خدمات مصغرة سحابي باستخدام Java و Go و Kubernetes."
         }
     },
+    "projectDetails": {
+        "notFound": "المشروع غير موجود",
+        "backToProjects": "العودة للمشاريع",
+        "sourceCode": "الكود المصدري",
+        "description": "الوصف",
+        "systemArchitecture": "بنية النظام",
+        "clickToExpand": "اضغط للتكبير",
+        "technologies": "التقنيات",
+        "reset": "إعادة تعيين",
+        "noImages": "لا توجد صور متاحة",
+        "screenshot": "لقطة شاشة للمشروع"
+    },
     "experience": {
         "title": "الخبرة والتعليم",
         "easy_software": {
