@@ -7,10 +7,11 @@ export const projects = [
         key: 'tidoco',
         github: '#',
         gitlab: 'https://gitlab.com/tidoco',
-        architectureChart: "https://storage.googleapis.com/portfolio-bucket-99/system_design_commu.jpeg",
+        architectureChart: "",
         external: null,
         longDescription: longDescriptions.tidoco,
-        tags: ['Kotlin', 'Spring Boot', 'System Design'],
+        tags: ['Kotlin', 'Spring Boot', 'System Design', 'SSE', "Compose multiplatform", 'GCP'],
+        media: []
 
     },
     {
@@ -20,7 +21,7 @@ export const projects = [
         gitlab: 'https://gitlab.com/commu-app',
         architectureChart: "public/images/commu-master-architecture.svg",
         external: null,
-        tags: ['Go', 'WebSocket', 'Message Queue'],
+        tags: ['Go', 'WebSocket', 'Message Queue', 'WebRTC'],
         longDescription: longDescriptions.commu,
         media: [
             {
