@@ -16,17 +16,7 @@ const ProjectMedia = ({ project }) => {
     };
 
     if (!hasMedia) {
-        return (
-            <div className="space-y-6">
-                {/* Default Placeholders if no media is present */}
-                <div className="bg-navy-800 aspect-video rounded-lg flex items-center justify-center border-2 border-dashed border-slate-700 hover:border-teal-400/50 transition-colors group">
-                    <div className="text-center">
-                        <span className="block text-4xl mb-2">🖼️</span>
-                        <span className="text-slate-500 group-hover:text-teal-400 transition-colors">{t('projectDetails.noImages')}</span>
-                    </div>
-                </div>
-            </div>
-        );
+        return null;
     }
 
     return (

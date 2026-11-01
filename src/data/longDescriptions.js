@@ -244,9 +244,9 @@ Commu מדגימה ארכיטקטורה ברמת ייצור להעברת הוד�
                 he: "PassGenius היא פלטפורמת ניהול סיסמאות וסודות Cloud-Native מבוססת מיקרו-שירותים שתוכננה עבור Kubernetes. היא נבנתה עם Backend רב-לשוני (Polyglot) ב-Java (Spring Boot) וב-Go, ומפרידה אימות, ניהול משתמשים, אחסון כספת מוצפן והתראות דוא\"ל לשירותים עצמאיים המתוזמרים מאחורי Kong API Gateway. תעבורת הרשת מפוצלת בין נתיבי Ingress פתוחים להתחברות/הרשמה לבין נתיבי Ingress מאומתים המוגנים בקצה באמצעות תוסף Kong JWT וסודות Kubernetes משותפים. הפלטפורמה כוללת גיבוב סיסמאות BCrypt, אימות HS256 JWT, שמירת נתונים ב-MongoDB וצינור Jenkins CI/CD אוטומטי בסגנון GitOps שבונה, בודק ודוחף תמונות קונטיינר ל-Docker Hub תוך עדכון אוטומטי של מניפסטים ב-Kustomize Kubernetes."
         },
         tidoco: {
-                en: "",
-                ar: "",
-                de: "",
-                he: ""
+                en: "A cross-platform appointment booking platform designed for businesses such as barbershops, salons, and nail studios. The platform connects customers with service providers through an intuitive booking experience, with real-time appointment management and notifications.",
+                ar: "منصة متعددة المنصات (Cross-Platform) لحجز المواعيد مصممة للشركات والأعمال مثل صالونات الحلاقة، ومراكز التجميل، واستوديوهات العناية بالأظافر. تربط المنصة العملاء بمقدمي الخدمات من خلال تجربة حجز سلسة وبديهية، مع إدارة فورية للمواعيد والإشعارات في الوقت الفعلي.",
+                de: "Eine plattformübergreifende Terminbuchungsplattform für Unternehmen wie Barbershops, Friseursalons und Nagelstudios. Die Plattform verbindet Kunden mit Dienstleistern über ein intuitives Buchungserlebnis – mit Terminverwaltung und Benachrichtigungen in Echtzeit.",
+                he: "פלטפורמת הזמנת תורים חוצת-פלטפורמות (Cross-Platform) המיועדת לעסקים כגון מספרות, סלוני יופי וסטודיו לציפורניים. הפלטפורמה מחברת בין לקוחות לנותני שירות באמצעות חוויית הזמנה אינטואיטיבית, עם ניהול תורים והתראות בזמן אמת."
         }
 };

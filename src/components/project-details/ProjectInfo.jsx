@@ -16,7 +16,7 @@ const ProjectInfo = ({ project }) => {
     return (
         <div>
             <div className={`grid grid-cols-1 ${architectureChartUrl ? 'lg:grid-cols-[4fr_3fr]' : ''} gap-8 items-start mb-8`}>
-                <div className="bg-navy-800 rounded-lg">
+                <div className={`bg-navy-800 rounded-lg ${architectureChartUrl ? 'w-full' : 'w-full lg:w-2/3'}`}>
                     <h2 className="text-2xl font-bold text-slate-200 mb-4 px-6 pt-6">{t('projectDetails.description')}</h2>
                     <SmartTextViewer rawText={description} />
                 </div>

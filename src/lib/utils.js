@@ -15,6 +15,8 @@ export function resolveMediaUrl(path) {
     if (!path || typeof path !== 'string') return path;
 
     const trimmed = path.trim();
+    if (!trimmed) return null;
+
     const isExternalUrl = /^(https?:\/\/|\/\/|data:|blob:)/i.test(trimmed);
 
     if (isExternalUrl) {

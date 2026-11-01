@@ -24,11 +24,11 @@ export const projects = [
         tags: ['Go', 'WebSocket', 'Message Queue', 'WebRTC'],
         longDescription: longDescriptions.commu,
         media: [
-            {
-                type: 'image',
-                url: 'public/images/commu-design.png',
-                caption: 'Main Chat Interface'
-            },
+            // {
+            //     type: 'image',
+            //     url: 'public/images/commu-design.png',
+            //     caption: 'Main Chat Interface'
+            // },
         ]
     },
     {
