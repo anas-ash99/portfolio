@@ -14,7 +14,7 @@ i18n
             escapeValue: false,
         },
         backend: {
-            loadPath: '/portfolio/locales/{{lng}}/translation.json',
+            loadPath: `${import.meta.env.BASE_URL}locales/{{lng}}/translation.json`,
         },
     });
 

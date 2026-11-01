@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://anas-ash99.github.io/portfolio",
+  "homepage": "https://anasashraf.dev",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
