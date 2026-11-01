@@ -28,6 +28,7 @@
     "portfolio": {
         "title": "مشاريع مميزة",
         "viewAll": "عرض كل المشاريع",
+        "inProgress": "قيد التطوير",
         "commu": {
             "title": "Commu (تطبيق مراسلة)",
             "description": "تطبيق مراسلة حديث مبني باستخدام Go و WebSocket للتواصل في الوقت الفعلي."

@@ -22,9 +22,17 @@ const ProjectCard = ({ project }) => {
                     <ExternalLink className="w-6 h-6" />
                 </a>
             </div>
-            <h3 className="text-xl font-bold text-slate-200 mb-2 group-hover:text-teal-400 transition-colors">
-                {t(`portfolio.${project.key}.title`)}
-            </h3>
+            <div className="flex items-center gap-2 mb-2 flex-wrap">
+                <h3 className="text-xl font-bold text-slate-200 group-hover:text-teal-400 transition-colors">
+                    {t(`portfolio.${project.key}.title`)}
+                </h3>
+                {project.status === 'in-progress' && (
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-400/10 text-amber-400 border border-amber-400/30">
+                        <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+                        {t('portfolio.inProgress')}
+                    </span>
+                )}
+            </div>
             <p className="text-slate-400 text-sm mb-4 flex-grow">
                 {t(`portfolio.${project.key}.description`)}
             </p>

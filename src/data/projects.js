@@ -5,6 +5,7 @@ export const projects = [
     {
         id: 'tidoco',
         key: 'tidoco',
+        status: 'in-progress',
         github: '#',
         gitlab: 'https://gitlab.com/tidoco',
         architectureChart: "",

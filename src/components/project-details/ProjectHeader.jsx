@@ -7,7 +7,15 @@ const ProjectHeader = ({ project }) => {
 
     return (
         <>
-            <h1 className="text-4xl font-bold text-slate-200 mb-4">{t(`portfolio.${project.key}.title`)}</h1>
+            <div className="flex items-center gap-3 mb-4 flex-wrap">
+                <h1 className="text-4xl font-bold text-slate-200">{t(`portfolio.${project.key}.title`)}</h1>
+                {project.status === 'in-progress' && (
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-amber-400/10 text-amber-400 border border-amber-400/30">
+                        <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                        {t('portfolio.inProgress')}
+                    </span>
+                )}
+            </div>
 
             <div className="flex gap-4 mb-8">
                 {project.github && project.github !== '#' && (

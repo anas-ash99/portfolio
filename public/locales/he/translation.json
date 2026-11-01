@@ -28,6 +28,7 @@
     "portfolio": {
         "title": "פרויקטים נבחרים",
         "viewAll": "צפה בכל הפרויקטים",
+        "inProgress": "בפיתוח",
         "commu": {
             "title": "Commu (אפליקציית הודעות)",
             "description": "אפליקציית הודעות מודרנית שנבנתה עם Go ו-WebSocket לתקשורת בזמן אמת."

@@ -28,6 +28,7 @@
     "portfolio": {
         "title": "Ausgewählte Projekte",
         "viewAll": "Alle Projekte ansehen",
+        "inProgress": "In Entwicklung",
         "commu": {
             "title": "Commu (Messaging App)",
             "description": "Eine moderne Messaging-App, entwickelt mit Go und WebSocket für Echtzeitkommunikation."
