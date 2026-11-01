@@ -1,27 +1,18 @@
 import React from 'react';
-
 import { useTranslation } from 'react-i18next';
+import { resolveMediaUrl } from '../../lib/utils';
 
 const ProjectMedia = ({ project }) => {
     const { t } = useTranslation();
     // Check if project has media defined
     const hasMedia = project.media && project.media.length > 0;
 
-    const isGCSUrl = (url) => {
-        return url && (url.includes('storage.cloud.google.com') || url.includes('storage.googleapis.com'));
-    };
-
     const getProcessedMedia = (item) => {
-        if (isGCSUrl(item.url)) {
-            // Convert storage.cloud.google.com to storage.googleapis.com for direct access
-            // Pattern: https://storage.cloud.google.com/BUCKET_NAME/OBJECT_PATH
-            // Target: https://storage.googleapis.com/BUCKET_NAME/OBJECT_PATH
-            if (item.url.includes('storage.cloud.google.com')) {
-                const newUrl = item.url.replace('storage.cloud.google.com', 'storage.googleapis.com');
-                return { ...item, url: newUrl };
-            }
-        }
-        return item;
+        return {
+            ...item,
+            url: resolveMediaUrl(item.url),
+            poster: item.poster ? resolveMediaUrl(item.poster) : item.poster,
+        };
     };
 
     if (!hasMedia) {

@@ -1,12 +1,12 @@
 export const longDescriptions = {
-    astra: {
-        en: "Astra AI is a cutting-edge intelligent chat assistant designed to revolutionize how users interact with AI. Built using Jetpack Compose for a modern, reactive UI, it leverages OpenAI's powerful Large Language Models to provide accurate and context-aware responses. The application features a robust architecture that ensures low latency and high availability, making it suitable for both casual conversation and complex problem-solving tasks.",
-        ar: "Astra AI هو مساعد دردشة ذكي متطور مصمم لإحداث ثورة في كيفية تفاعل المستخدمين مع الذكاء الاصطناعي. تم تصميمه باستخدام Jetpack Compose لواجهة مستخدم حديثة وتفاعلية، ويستفيد من نماذج اللغة الكبيرة القوية من OpenAI لتوفير استجابات دقيقة ومدركة للسياق. يتميز التطبيق ببنية قوية تضمن زمن انتقال منخفض وتوافر عالي، مما يجعله مناسبًا لكل من المحادثات العادية ومهام حل المشكلات المعقدة.",
-        de: "Astra AI ist ein hochmoderner intelligenter Chat-Assistent, der entwickelt wurde, um die Interaktion von Benutzern mit KI zu revolutionieren. Er wurde mit Jetpack Compose für eine moderne, reaktive Benutzeroberfläche entwickelt und nutzt die leistungsstarken Large Language Models von OpenAI, um genaue und kontextbezogene Antworten zu liefern. Die Anwendung verfügt über eine robuste Architektur, die geringe Latenz und hohe Verfügbarkeit gewährleistet und sich sowohl für lockere Gespräche als auch für komplexe Problemlösungsaufgaben eignet.",
-        he: "Astra AI הוא עוזר צ'אט חכם ומתקדם שנועד לחולל מהפכה באופן שבו משתמשים מתקשרים עם AI. הוא נבנה באמצעות Jetpack Compose לממשק משתמש מודרני וריאקטיבי, וממנף את מודלי השפה הגדולים והחזקים של OpenAI כדי לספק תשובות מדויקות ומודעות להקשר. האפליקציה כוללת ארכיטקטורה חזקה המבטיחה השהיה נמוכה וזמינות גבוהה, מה שהופך אותה למתאימה הן לשיחות חולין והן למשימות פתרון בעיות מורכבות."
-    },
-    zavvo: {
-        en: `Zavvo is a specialized gift card marketplace platform designed to facilitate the purchasing, management, and redemption of digital gift cards.
+        astra: {
+                en: "Astra AI is a cutting-edge intelligent chat assistant designed to revolutionize how users interact with AI. Built using Jetpack Compose for a modern, reactive UI, it leverages OpenAI's powerful Large Language Models to provide accurate and context-aware responses. The application features a robust architecture that ensures low latency and high availability, making it suitable for both casual conversation and complex problem-solving tasks.",
+                ar: "Astra AI هو مساعد دردشة ذكي متطور مصمم لإحداث ثورة في كيفية تفاعل المستخدمين مع الذكاء الاصطناعي. تم تصميمه باستخدام Jetpack Compose لواجهة مستخدم حديثة وتفاعلية، ويستفيد من نماذج اللغة الكبيرة القوية من OpenAI لتوفير استجابات دقيقة ومدركة للسياق. يتميز التطبيق ببنية قوية تضمن زمن انتقال منخفض وتوافر عالي، مما يجعله مناسبًا لكل من المحادثات العادية ومهام حل المشكلات المعقدة.",
+                de: "Astra AI ist ein hochmoderner intelligenter Chat-Assistent, der entwickelt wurde, um die Interaktion von Benutzern mit KI zu revolutionieren. Er wurde mit Jetpack Compose für eine moderne, reaktive Benutzeroberfläche entwickelt und nutzt die leistungsstarken Large Language Models von OpenAI, um genaue und kontextbezogene Antworten zu liefern. Die Anwendung verfügt über eine robuste Architektur, die geringe Latenz und hohe Verfügbarkeit gewährleistet und sich sowohl für lockere Gespräche als auch für komplexe Problemlösungsaufgaben eignet.",
+                he: "Astra AI הוא עוזר צ'אט חכם ומתקדם שנועד לחולל מהפכה באופן שבו משתמשים מתקשרים עם AI. הוא נבנה באמצעות Jetpack Compose לממשק משתמש מודרני וריאקטיבי, וממנף את מודלי השפה הגדולים והחזקים של OpenAI כדי לספק תשובות מדויקות ומודעות להקשר. האפליקציה כוללת ארכיטקטורה חזקה המבטיחה השהיה נמוכה וזמינות גבוהה, מה שהופך אותה למתאימה הן לשיחות חולין והן למשימות פתרון בעיות מורכבות."
+        },
+        zavvo: {
+                en: `Zavvo is a specialized gift card marketplace platform designed to facilitate the purchasing, management, and redemption of digital gift cards.
 
 Built on a robust event-driven microservices architecture, it ensures scalability and reliability for handling financial transactions and inventory management.
 
@@ -27,7 +27,7 @@ email_service: Delivers transactional emails (e.g., purchase receipts, gift card
 Infrastructure
 Containerization: Services are Dockerized for consistent deployment environments.
 Orchestration: Deployed using Kubernetes (managed via Kustomize), allowing for independent scaling of high-demand services like payments or card lookups.`,
-        ar: `Zavvo هي منصة سوق متخصصة لبطاقات الهدايا مصممة لتسهيل شراء وإدارة واسترداد بطاقات الهدايا الرقمية.
+                ar: `Zavvo هي منصة سوق متخصصة لبطاقات الهدايا مصممة لتسهيل شراء وإدارة واسترداد بطاقات الهدايا الرقمية.
 
 مبنية على بنية خدمات مصغرة قوية تعتمد على الأحداث، مما يضمن قابلية التوسع والموثوقية للتعامل مع المعاملات المالية وإدارة المخزون.
 
@@ -48,7 +48,7 @@ email_service: يسلم رسائل البريد الإلكتروني للمعا�
 البنية التحتية
 الحاويات: الخدمات موضوعة في حاويات Docker لبيئات نشر متسقة.
 التنسيق: يتم النشر باستخدام Kubernetes (تتم إدارته عبر Kustomize)، مما يسمح بالتوسع المستقل للخدمات عالية الطلب مثل المدفوعات أو عمليات البحث عن البطاقات.`,
-        de: `Zavvo ist eine spezialisierte Marktplatzplattform für Geschenkkarten, die den Kauf, die Verwaltung und die Einlösung digitaler Geschenkkarten erleichtern soll.
+                de: `Zavvo ist eine spezialisierte Marktplatzplattform für Geschenkkarten, die den Kauf, die Verwaltung und die Einlösung digitaler Geschenkkarten erleichtern soll.
 
 Aufgebaut auf einer robusten ereignisgesteuerten Microservices-Architektur gewährleistet sie Skalierbarkeit und Zuverlässigkeit für die Abwicklung von Finanztransaktionen und die Bestandsverwaltung.
 
@@ -69,7 +69,7 @@ email_service: Liefert Transaktions-E-Mails (z. B. Kaufbelege, Geschenkkartencod
 Infrastruktur
 Containerisierung: Dienste sind für konsistente Bereitstellungsumgebungen dockerisiert.
 Orchestrierung: Bereitgestellt mit Kubernetes (verwaltet über Kustomize), was eine unabhängige Skalierung von stark nachgefragten Diensten wie Zahlungen oder Kartensuchen ermöglicht.`,
-        he: `Zavvo היא פלטפורמת שוק ייעודית לכרטיסי מתנה שנועדה להקל על הרכישה, הניהול והפדיון של כרטיסי מתנה דיגיטליים.
+                he: `Zavvo היא פלטפורמת שוק ייעודית לכרטיסי מתנה שנועדה להקל על הרכישה, הניהול והפדיון של כרטיסי מתנה דיגיטליים.
 
 היא בנויה על ארכיטקטורת מיקרו-שירותים חזקה מונעת אירועים, ומבטיחה סקלביליות ואמינות לטיפול בעסקאות פיננסיות וניהול מלאי.
 
@@ -90,135 +90,163 @@ email_service: מספק אימיילים עסקתיים (למשל, קבלות ר
 תשתית
 קונטיינריזציה: השירותים ארוזים ב-Docker עבור סביבות פריסה עקביות.
 תזמור: נפרס באמצעות Kubernetes (מנוהל באמצעות Kustomize), המאפשר סקיילינג עצמאי של שירותים בעלי ביקוש גבוה כמו תשלומים או חיפושי כרטיסים.`
-    },
-    commu: {
-        en: `
-📱 Commu – Real-Time Messaging App
-Commu is a full-stack messaging application designed for speed, reliability, and modern usability. It delivers seamless real-time communication with a responsive Android experience and a high-performance backend.
+        },
+        commu: {
+                en: `
+📱 Commu – Distributed Real-Time Messaging & WebRTC Calling Platform
+Commu is a full-stack, event-driven communication platform engineered for low-latency messaging, peer-to-peer audio/video calling, and resilient offline delivery. It pairs a modern offline-first Android client with a containerized Go microservices backend.
 
-🎨 Android Front-End
- Framework: Jetpack Compose
- Design: Modern reactive UI with smooth animations
- Communication: Persistent WebSocket connection for live messaging
+🎨 Android Client Architecture
+ Framework: Kotlin & Jetpack Compose with MVVM/MVI unidirectional data flow
+ Dependency Injection: Dagger Hilt for modular, testable architecture
+ Local Persistence: Offline-first caching powered by Room (SQLite) and Preferences DataStore
+ Real-Time Sync: Persistent OkHttp WebSocket client with Kotlin Coroutines & SharedFlow event streams, automatic reconnection, and heartbeat polling
+ Calling UI: Full-screen lock-screen call intents and Picture-in-Picture (PiP) video support
 
-⚙️ Backend Architecture
- Language: Go
- Pattern: Event-driven, distributed service design
- Transport: WebSocket for real-time communication
- Queueing: RabbitMQ for message publishing and load distribution
- Caching: Redis for fast data access and reduced database load
+⚙️ Distributed Backend Architecture
+ Language & Routing: 5 decoupled Go microservices fronted by an Nginx API Gateway & Reverse Proxy
+ Services: Dedicated User, Chat, Call, Notification, and WebSocket Gateway services sharing a common domain & broker library (go-common)
+ Event Broker: RabbitMQ (AMQP) with durable queues for non-blocking message ingestion, WebRTC signaling, presence fan-out, and push fallback
+ Database: MongoDB document store for users, bidirectional friend graphs, chats, messages, and call logs
+ WebSocket Hub: Stateful Gorilla WebSocket hub supporting multi-device sessions, 5-second write acknowledgments, Ping/Pong heartbeat deadlines, and friend-only online status broadcasts
 
-🔔 Notifications
- System: Firebase Cloud Messaging
- Purpose: Deliver push notifications even when users are offline
+📞 Peer-to-Peer Audio & HD Video Calling
+ Engine: Native WebRTC (PeerConnection) with hardware-accelerated EglBase video rendering (720p @ 30fps)
+ Audio Processing: Hardware Acoustic Echo Cancellation (AEC), Noise Suppression, and Auto Gain Control
+ Signaling Pipeline: Asynchronous SDP Offer, SDP Answer, and Trickle ICE candidate exchange routed via Call Service, RabbitMQ, and WebSocket Gateway
 
-🚀 Highlights
-- Low-latency real-time messaging
-- Scalable backend messaging pipeline
-- Optimized UI powered by Jetpack Compose
-- Robust caching and offline support
+🔔 Smart Offline Push Fallback
+ System: Firebase Cloud Messaging (FCM) via Firebase Admin Go SDK
+ Workflow: When the WebSocket Gateway detects a recipient has no active socket session (or times out on delivery), it automatically reroutes chat messages and incoming call alerts to RabbitMQ notification queues, waking the device with deep-linked chat banners or full-screen incoming call screens
+
+🚀 Key Engineering Highlights
+- Asynchronous write pipeline decoupling HTTP message ingestion from database persistence and real-time delivery
+- End-to-end message lifecycle tracking (Created, Delivered, and Seen read receipts)
+- Automatic failover from live WebSocket delivery to FCM push notifications
+- Containerized multi-service deployment orchestrated with Docker Compose and health checks
 
 💡 Summary
-Commu demonstrates a complete production-grade messaging platform built with modern technologies across the entire stack. It combines a sleek Android experience with a fast, scalable, and event-driven backend built in Go.
+Commu showcases a production-style distributed messaging and WebRTC calling architecture. It combines a reactive, offline-first Jetpack Compose Android app with a fault-isolated, event-driven Go microservices backend built around RabbitMQ, WebSockets, and MongoDB.
 `,
-        ar: `
-📱 Commu – تطبيق مراسلة في الوقت الفعلي
-Commu هو تطبيق مراسلة متكامل مصمم للسرعة والموثوقية وسهولة الاستخدام الحديثة. يوفر تواصلاً سلساً في الوقت الفعلي مع تجربة Android سريعة الاستجابة وخلفية عالية الأداء.
+                ar: `
+📱 Commu – منصة مراسلة فورية موزعة ومكالمات WebRTC
+Commu هي منصة تواصل متكاملة تعتمد على الأحداث (Event-Driven)، صُممت للمراسلة ذات زمن الاستجابة المنخفض، ومكالمات الصوت والفيديو المباشرة من نظير إلى نظير (Peer-to-Peer)، والتسليم الموثوق للرسائل في وضع عدم الاتصال. تجمع المنصة بين تطبيق Android حديث يعمل بنهج Offline-First وخلفية خدمات مصغرة (Microservices) مبنية بلغة Go داخل حاويات.
 
-🎨 Android Front-End
- إطار العمل: Jetpack Compose
- التصميم: واجهة مستخدم تفاعلية حديثة مع رسوم متحركة سلسة
- الاتصال: اتصال WebSocket دائم للمراسلة المباشرة
+🎨 بنية عميل Android
+ إطار العمل: Kotlin و Jetpack Compose مع تدفق بيانات أحادي الاتجاه بنمط MVVM/MVI
+ حقن التبعيات: Dagger Hilt لبنية معيارية وقابلة للاختبار
+ التخزين المحلي: تخزين مؤقت بنهج Offline-First مدعوم بـ Room (SQLite) و Preferences DataStore
+ المزامنة الفورية: عميل OkHttp WebSocket دائم مع تدفقات أحداث Kotlin Coroutines و SharedFlow، وإعادة اتصال تلقائية، ونبضات فحص الاتصال (Heartbeat Polling)
+ واجهة المكالمات: شاشات مكالمات بملء الشاشة على شاشة القفل ودعم وضع صورة داخل صورة (PiP) للفيديو
 
-⚙️ بنية الخلفية
- اللغة: Go
- النمط: تصميم خدمة موزع يعتمد على الأحداث
- النقل: WebSocket للتواصل في الوقت الفعلي
- قائمة الانتظار: RabbitMQ لنشر الرسائل وتوزيع الحمل
- التخزين المؤقت: Redis للوصول السريع للبيانات وتقليل حمل قاعدة البيانات
+⚙️ بنية الخلفية الموزعة (Backend)
+ اللغة والتوجيه: 5 خدمات مصغرة مفصولة بلغة Go تتقدمها بوابة Nginx API Gateway و Reverse Proxy
+ الخدمات: خدمات مخصصة للمستخدمين (User)، والمحادثات (Chat)، والمكالمات (Call)، والإشعارات (Notification)، وبوابة WebSocket تشترك جميعها في مكتبة نطاق ووسيط موحدة (go-common)
+ وسيط الأحداث: RabbitMQ (AMQP) مع طوابير دائمة لاستيعاب الرسائل دون حظر، وإشارات WebRTC، وبث حالة الاتصال، والرجوع التلقائي لإشعارات الدفع
+ قاعدة البيانات: مخزن مستندات MongoDB للمستخدمين، وعلاقات الصداقة ثنائية الاتجاه، والمحادثات، والرسائل، وسجلات المكالمات
+ مركز WebSocket: مركز Gorilla WebSocket يحتفظ بالحالة ويدعم جلسات متعددة الأجهزة، وتأكيدات كتابة خلال 5 ثوانٍ، ومواعيد نهائية لنبضات Ping/Pong، وبث حالة الاتصال للأصدقاء فقط
 
-🔔 الإشعارات
- النظام: Firebase Cloud Messaging
- الغرض: تسليم إشعارات الدفع حتى عندما يكون المستخدمون غير متصلين
+📞 مكالمات صوتية وفيديو عالي الدقة (HD) من نظير إلى نظير
+ المحرك: WebRTC الأصلي (PeerConnection) مع عرض فيديو مسرّع بالعتاد عبر EglBase (بدقة 720p بمعدل 30 إطاراً في الثانية)
+ معالجة الصوت: إلغاء الصدى الصوتي بالعتاد (AEC)، وكتم الضوضاء، والتحكم التلقائي في الكسب (Auto Gain Control)
+ خط أنابيب الإشارات: تبادل غير متزامن لعروض SDP وإجابات SDP ومرشحي Trickle ICE يتم توجيهه عبر خدمة المكالمات و RabbitMQ وبوابة WebSocket
 
-🚀 أبرز الملامح
-- مراسلة في الوقت الفعلي بزمن انتقال منخفض
-- خط أنابيب مراسلة خلفية قابل للتوسع
-- واجهة مستخدم محسنة مدعومة بـ Jetpack Compose
-- تخزين مؤقت قوي ودعم وضع عدم الاتصال
+🔔 النظام الذكي البديل لإشعارات الدفع دون اتصال
+ النظام: Firebase Cloud Messaging (FCM) عبر حزمة Firebase Admin Go SDK
+ آلية العمل: عندما تكتشف بوابة WebSocket عدم وجود جلسة نشطة للمستلم (أو انتهاء مهلة التسليم)، فإنها تعيد توجيه رسائل الدردشة وتنبيهات المكالمات الواردة تلقائياً إلى طوابير إشعارات RabbitMQ، مما يوقظ الجهاز بإشعارات دردشة ذات روابط عميقة أو شاشات مكالمات واردة بملء الشاشة
+
+🚀 أبرز المزايا الهندسية
+- خط أنابيب كتابة غير متزامن يفصل استيعاب رسائل HTTP عن الحفظ في قاعدة البيانات والتسليم الفوري
+- تتبع شامل لدورة حياة الرسالة (إيصالات الإنشاء، والتسليم، والقراءة)
+- التحويل التلقائي عند الفشل من التسليم المباشر عبر WebSocket إلى إشعارات الدفع عبر FCM
+- نشر متعدد الخدمات داخل حاويات يتم تنسيقه باستخدام Docker Compose وفحوصات سلامة الخدمات (Health Checks)
 
 💡 ملخص
-يوضح Commu منصة مراسلة كاملة من الدرجة الإنتاجية مبنية بتقنيات حديثة عبر المجموعة بأكملها. يجمع بين تجربة Android أنيقة وخلفية سريعة وقابلة للتوسع وتعتمد على الأحداث مبنية بـ Go.
+يستعرض Commu بنية بمستوى إنتاجي للمراسلة الموزعة ومكالمات WebRTC. فهو يجمع بين تطبيق Android تفاعلي يعمل بنهج Offline-First باستخدام Jetpack Compose، وخلفية خدمات مصغرة بلغة Go معزولة الأخطاء وتعتمد على الأحداث، مبنية حول RabbitMQ و WebSockets و MongoDB.
 `,
-        de: `
-📱 Commu – Echtzeit-Messaging-App
-Commu ist eine Full-Stack-Messaging-Anwendung, die auf Geschwindigkeit, Zuverlässigkeit und moderne Benutzerfreundlichkeit ausgelegt ist. Sie bietet nahtlose Echtzeitkommunikation mit einem reaktionsschnellen Android-Erlebnis und einem leistungsstarken Backend.
+                de: `
+📱 Commu – Verteilte Echtzeit-Messaging- & WebRTC-Anrufplattform
+Commu ist eine ereignisgesteuerte Full-Stack-Kommunikationsplattform, die für Messaging mit geringer Latenz, Peer-to-Peer-Audio-/Videoanrufe und eine ausfallsichere Offline-Zustellung entwickelt wurde. Sie kombiniert einen modernen Offline-First-Android-Client mit einem containerisierten Go-Microservices-Backend.
 
-🎨 Android-Frontend
- Framework: Jetpack Compose
- Design: Moderne reaktive Benutzeroberfläche mit flüssigen Animationen
- Kommunikation: Dauerhafte WebSocket-Verbindung für Live-Messaging
+🎨 Android-Client-Architektur
+ Framework: Kotlin & Jetpack Compose mit unidirektionalem MVVM/MVI-Datenfluss
+ Dependency Injection: Dagger Hilt für eine modulare, testbare Architektur
+ Lokale Persistenz: Offline-First-Caching auf Basis von Room (SQLite) und Preferences DataStore
+ Echtzeit-Synchronisation: Persistenter OkHttp-WebSocket-Client mit Kotlin Coroutines & SharedFlow-Event-Streams, automatischer Wiederverbindung und Heartbeat-Polling
+ Anruf-UI: Vollbild-Anruf-Intents auf dem Sperrbildschirm und Bild-in-Bild (PiP)-Videounterstützung
 
-⚙️ Backend-Architektur
- Sprache: Go
- Muster: Ereignisgesteuertes, verteiltes Service-Design
- Transport: WebSocket für Echtzeitkommunikation
- Warteschlange: RabbitMQ für Nachrichtenveröffentlichung und Lastverteilung
- Caching: Redis für schnellen Datenzugriff und reduzierte Datenbanklast
+⚙️ Verteilte Backend-Architektur
+ Sprache & Routing: 5 entkoppelte Go-Microservices hinter einem Nginx API Gateway & Reverse Proxy
+ Services: Dedizierte User-, Chat-, Call-, Notification- und WebSocket-Gateway-Services, die eine gemeinsame Domain- & Broker-Bibliothek (go-common) nutzen
+ Event Broker: RabbitMQ (AMQP) mit dauerhaften Warteschlangen für nicht-blockierende Nachrichtenaufnahme, WebRTC-Signalisierung, Präsenz-Fan-Out und Push-Fallback
+ Datenbank: MongoDB-Dokumentenspeicher für Benutzer, bidirektionale Freundschaftsgraphen, Chats, Nachrichten und Anrufprotokolle
+ WebSocket-Hub: Zustandsbehafteter Gorilla-WebSocket-Hub mit Unterstützung für Multi-Device-Sitzungen, 5-Sekunden-Schreibbestätigungen, Ping/Pong-Heartbeat-Fristen und Online-Status-Broadcasts nur für Freunde
 
-🔔 Benachrichtigungen
- System: Firebase Cloud Messaging
- Zweck: Zustellung von Push-Benachrichtigungen, auch wenn Benutzer offline sind
+📞 Peer-to-Peer-Audio- & HD-Videoanrufe
+ Engine: Natives WebRTC (PeerConnection) mit hardwarebeschleunigtem EglBase-Videorendering (720p @ 30fps)
+ Audioverarbeitung: Hardwareseitige akustische Echounterdrückung (AEC), Rauschunterdrückung und automatische Verstärkungsregelung (Auto Gain Control)
+ Signalisierungs-Pipeline: Asynchroner Austausch von SDP-Offer, SDP-Answer und Trickle-ICE-Kandidaten über Call Service, RabbitMQ und WebSocket Gateway
 
-🚀 Highlights
-- Echtzeit-Messaging mit geringer Latenz
-- Skalierbare Backend-Messaging-Pipeline
-- Optimierte Benutzeroberfläche powered by Jetpack Compose
-- Robustes Caching und Offline-Support
+🔔 Intelligenter Offline-Push-Fallback
+ System: Firebase Cloud Messaging (FCM) über das Firebase Admin Go SDK
+ Workflow: Wenn das WebSocket Gateway erkennt, dass ein Empfänger keine aktive Socket-Sitzung hat (oder bei der Zustellung eine Zeitüberschreitung auftritt), leitet es Chat-Nachrichten und eingehende Anrufsignale automatisch an RabbitMQ-Benachrichtigungswarteschlangen weiter und weckt das Gerät mit Deep-Link-Chat-Bannern oder Vollbild-Anrufanzeigen auf
+
+🚀 Wichtige Engineering-Highlights
+- Asynchrone Schreib-Pipeline, die die HTTP-Nachrichtenaufnahme von der Datenbankpersistenz und der Echtzeitzustellung entkoppelt
+- Durchgängige Verfolgung des Nachrichtenlebenszyklus (Lesebestätigungen für Erstellt, Zugestellt und Gesehen)
+- Automatisches Failover von der Live-WebSocket-Zustellung auf FCM-Push-Benachrichtigungen
+- Containerisiertes Multi-Service-Deployment, orchestriert mit Docker Compose und Health Checks
 
 💡 Zusammenfassung
-Commu demonstriert eine komplette Messaging-Plattform auf Produktionsniveau, die mit modernen Technologien über den gesamten Stack hinweg aufgebaut ist. Sie kombiniert ein elegantes Android-Erlebnis mit einem schnellen, skalierbaren und ereignisgesteuerten Backend, das in Go erstellt wurde.
+Commu präsentiert eine produktionsreife Architektur für verteiltes Messaging und WebRTC-Telefonie. Es vereint eine reaktive Offline-First-Android-App auf Basis von Jetpack Compose mit einem fehlerisolierten, ereignisgesteuerten Go-Microservices-Backend rund um RabbitMQ, WebSockets und MongoDB.
 `,
-        he: `
-📱 Commu – אפליקציית הודעות בזמן אמת
-Commu היא אפליקציית הודעות Full-Stack שתוכננה למהירות, אמינות ושימושיות מודרנית. היא מספקת תקשורת חלקה בזמן אמת עם חווית אנדרואיד רספונסיבית ו-Backend בעל ביצועים גבוהים.
+                he: `
+📱 Commu – פלטפורמה מבוזרת להודעות בזמן אמת ושיחות WebRTC
+Commu היא פלטפורמת תקשורת Full-Stack מונחית-אירועים (Event-Driven), שהונדסה להעברת הודעות בשיהוי נמוך, שיחות אודיו/וידאו ישירות (Peer-to-Peer) ומסירה אמינה גם במצב לא מקוון. היא משלבת לקוח אנדרואיד מודרני בגישת Offline-First עם Backend מבוסס מיקרו-שירותים בשפת Go הרצים בקונטיינרים.
 
-🎨 Front-End אנדרואיד
- Framework: Jetpack Compose
- עיצוב: ממשק משתמש ריאקטיבי מודרני עם אנימציות חלקות
- תקשורת: חיבור WebSocket מתמיד להודעות חיניות
+🎨 ארכיטקטורת לקוח אנדרואיד
+ תשתית (Framework): Kotlin ו-Jetpack Compose עם זרימת נתונים חד-כיוונית במודל MVVM/MVI
+ הזרקת תלויות (DI): Dagger Hilt לארכיטקטורה מודולרית וניתנת לבדיקה
+ שמירה מקומית: מטמון Offline-First המופעל על ידי Room (SQLite) ו-Preferences DataStore
+ סנכרון בזמן אמת: לקוח OkHttp WebSocket מתמיד עם זרמי אירועים של Kotlin Coroutines ו-SharedFlow, התחברות מחדש אוטומטית ובדיקות דופק (Heartbeat Polling)
+ ממשק שיחות: מסכי שיחה במסך מלא מעל מסך הנעילה ותמיכה בוידאו בתצוגת תמונה-בתוך-תמונה (PiP)
 
-⚙️ ארכיטקטורת Backend
- שפה: Go
- תבנית: עיצוב שירות מבוזר מונחה אירועים
- תעבורה: WebSocket לתקשורת בזמן אמת
- תור: RabbitMQ לפרסום הודעות וחלוקת עומסים
- מטמון: Redis לגישה מהירה לנתונים והפחתת עומס על מסד הנתונים
+⚙️ ארכיטקטורת Backend מבוזרת
+ שפה וניתוב: 5 מיקרו-שירותים מופרדים ב-Go מאחורי Nginx API Gateway ו-Reverse Proxy
+ שירותים: שירותים ייעודיים למשתמשים (User), צ'אט (Chat), שיחות (Call), התראות (Notification) ו-WebSocket Gateway החולקים ספריית דומיין וברוקר משותפת (go-common)
+ מתווך אירועים (Event Broker): RabbitMQ (AMQP) עם תורים עמידים לקליטת הודעות לא-חוסמת, איתות WebRTC, הפצת סטטוס מחובר וגיבוי בהתראות דחיפה (Push)
+ מסד נתונים: מאגר מסמכים MongoDB עבור משתמשים, גרף חברים דו-כיווני, צ'אטים, הודעות ויומני שיחות
+ מרכז WebSocket: שרת Gorilla WebSocket שומר-מצב (Stateful) התומך בחיבורים מרובי-מכשירים, אישורי כתיבה תוך 5 שניות, מועדי Ping/Pong קצובים ושידור סטטוס מחובר לחברים בלבד
 
-🔔 התראות
- מערכת: Firebase Cloud Messaging
-מטרה: מסירת התראות דחיפה גם כאשר משתמשים במצב לא מקוון
+📞 שיחות אודיו ווידאו HD ישירות (Peer-to-Peer)
+ מנוע: WebRTC טבעי (PeerConnection) עם רינדור וידאו מואץ-חומרה באמצעות EglBase (720p @ 30fps)
+ עיבוד שמע: ביטול הד אקוסטי בחומרה (AEC), סינון רעשים ובקרת עוצמה אוטומטית (Auto Gain Control)
+ צינור איתות (Signaling): החלפה אסינכרונית של SDP Offer, SDP Answer ומועמדי Trickle ICE המנותבים דרך שירות השיחות, RabbitMQ ו-WebSocket Gateway
 
-🚀 דגשים
-- הודעות בזמן אמת עם השהיה נמוכה
-- צינור הודעות Backend סקלבילי
-- ממשק משתמש מותאם המופעל על ידי Jetpack Compose
-- מטמון חזק ותמיכה במצב לא מקוון
+🔔 מנגנון גיבוי חכם להתראות Push במצב לא מקוון
+ מערכת: Firebase Cloud Messaging (FCM) באמצעות Firebase Admin Go SDK
+ אופן פעולה: כאשר ה-WebSocket Gateway מזהה שלנמען אין חיבור פעיל (או שחלה חריגה מזמן המסירה), הוא מנתב מחדש באופן אוטומטי הודעות צ'אט והתראות על שיחות נכנסות לתורי ההתראות ב-RabbitMQ, ומעיר את המכשיר עם באנרים בעלי קישור עמוק לצ'אט או מסכי שיחה נכנסת במסך מלא
+
+🚀 דגשים הנדסיים מרכזיים
+- צינור כתיבה אסינכרוני המפריד בין קליטת הודעות ב-HTTP לבין שמירה במסד הנתונים ומסירה בזמן אמת
+- מעקב מקצה-לקצה אחר מחזור חיי ההודעה (אישורי יצירה, מסירה וקריאה)
+- מעבר גיבוי אוטומטי (Failover) ממסירה חיה ב-WebSocket להתראות דחיפה ב-FCM
+- פריסה מרובת-שירותים בקונטיינרים המתוזמרת באמצעות Docker Compose ובדיקות תקינות (Health Checks)
 
 💡 סיכום
-Commu מדגימה פלטפורמת הודעות מלאה ברמת ייצור שנבנתה עם טכנולוגיות מודרניות לאורך כל ה-Stack. היא משלבת חווית אנדרואיד אלגנטית עם Backend מהיר, סקלבילי ומונחה אירועים שנבנה ב-Go.
+Commu מדגימה ארכיטקטורה ברמת ייצור להעברת הודעות מבוזרת ושיחות WebRTC. היא משלבת אפליקציית אנדרואיד ריאקטיבית בגישת Offline-First הבנויה ב-Jetpack Compose עם Backend מיקרו-שירותים ב-Go מבודד-כשלים ומונחה-אירועים, הבנוי סביב RabbitMQ, WebSockets ו-MongoDB.
 `
-    },
-    microservices: {
-        en: "",
-        ar: "",
-        de: "",
-        he: ""
-    },
-    tidoco: {
-        en: "",
-        ar: "",
-        de: "",
-        he: ""
-    }
+        },
+        microservices: {
+                en: "PassGenius is a cloud-native, microservices-based password and secret management platform architected for Kubernetes. Built with a polyglot backend in Java (Spring Boot) and Go, it separates authentication, user management, encrypted vault storage, and email notifications into independent services orchestrated behind a Kong API Gateway. Traffic is split between open ingress routes for login/registration and authenticated ingress routes protected at the edge by the Kong JWT plugin using shared Kubernetes secrets. The platform features BCrypt password hashing, HS256 JWT authentication, MongoDB persistence, and an automated GitOps-style Jenkins CI/CD pipeline that builds, tests, and pushes container images to Docker Hub while automatically updating Kustomize Kubernetes manifests.",
+                ar: "PassGenius هي منصة سحابية أصلية (Cloud-Native) ومبنية على بنية الخدمات المصغرة (Microservices) لإدارة كلمات المرور والأسرار الرقمية، ومصممة خصيصاً لبيئة Kubernetes. تم بناء المنصة بخلفية متعددة اللغات البرمجية باستخدام Java (Spring Boot) و Go، حيث تفصل المصادقة، وإدارة المستخدمين، ومخزن الخزينة المشفر، وإشعارات البريد الإلكتروني إلى خدمات مستقلة يتم تنسيقها خلف بوابة Kong API Gateway. يتم تقسيم حركة المرور بين مسارات دخول مفتوحة لتسجيل الدخول والتسجيل، ومسارات دخول موثقة محمية عند الحافة بواسطة إضافة Kong JWT باستخدام أسرار Kubernetes المشتركة. تتميز المنصة بتشفير كلمات المرور باستخدام BCrypt، والمصادقة عبر HS256 JWT، والتخزين الدائم في MongoDB، وخط أنابيب Jenkins CI/CD آلي بنمط GitOps يقوم بالبناء والاختبار ودفع صور الحاويات إلى Docker Hub مع تحديث بيانات Kustomize في Kubernetes تلقائياً.",
+                de: "PassGenius ist eine Cloud-Native, auf Microservices basierende Plattform zur Passwort- und Geheimnisverwaltung, die für Kubernetes entwickelt wurde. Mit einem polyglotten Backend in Java (Spring Boot) und Go trennt sie Authentifizierung, Benutzerverwaltung, verschlüsselten Vault-Speicher und E-Mail-Benachrichtigungen in unabhängige Dienste, die hinter einem Kong API Gateway orchestriert werden. Der Datenverkehr wird aufgeteilt in offene Ingress-Routen für Login/Registrierung und authentifizierte Ingress-Routen, die am Edge durch das Kong JWT-Plugin unter Verwendung gemeinsam genutzter Kubernetes-Secrets geschützt sind. Die Plattform bietet BCrypt-Passwort-Hashing, HS256-JWT-Authentifizierung, MongoDB-Persistenz und eine automatisierte Jenkins-CI/CD-Pipeline im GitOps-Stil, die Container-Images erstellt, testet und auf Docker Hub pusht, während Kustomize-Kubernetes-Manifeste automatisch aktualisiert werden.",
+                he: "PassGenius היא פלטפורמת ניהול סיסמאות וסודות Cloud-Native מבוססת מיקרו-שירותים שתוכננה עבור Kubernetes. היא נבנתה עם Backend רב-לשוני (Polyglot) ב-Java (Spring Boot) וב-Go, ומפרידה אימות, ניהול משתמשים, אחסון כספת מוצפן והתראות דוא\"ל לשירותים עצמאיים המתוזמרים מאחורי Kong API Gateway. תעבורת הרשת מפוצלת בין נתיבי Ingress פתוחים להתחברות/הרשמה לבין נתיבי Ingress מאומתים המוגנים בקצה באמצעות תוסף Kong JWT וסודות Kubernetes משותפים. הפלטפורמה כוללת גיבוב סיסמאות BCrypt, אימות HS256 JWT, שמירת נתונים ב-MongoDB וצינור Jenkins CI/CD אוטומטי בסגנון GitOps שבונה, בודק ודוחף תמונות קונטיינר ל-Docker Hub תוך עדכון אוטומטי של מניפסטים ב-Kustomize Kubernetes."
+        },
+        tidoco: {
+                en: "",
+                ar: "",
+                de: "",
+                he: ""
+        }
 };

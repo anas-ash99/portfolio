@@ -18,14 +18,14 @@ export const projects = [
         key: 'commu',
         github: '#',
         gitlab: 'https://gitlab.com/commu-app',
-        architectureChart: "https://storage.googleapis.com/portfolio-bucket-99/Commu%20system%20design.png",
+        architectureChart: "public/images/commu-master-architecture.svg",
         external: null,
         tags: ['Go', 'WebSocket', 'Message Queue'],
         longDescription: longDescriptions.commu,
         media: [
             {
                 type: 'image',
-                url: 'https://placehold.co/600x400/1a202c/teal?text=Commu+App+Screenshot',
+                url: 'public/images/commu-design.png',
                 caption: 'Main Chat Interface'
             },
         ]
@@ -97,7 +97,7 @@ export const projects = [
     {
         id: 'microservices',
         key: 'microservices',
-        architectureChart: "https://placehold.co/800x600/1e293b/teal?text=System+Architecture+Chart",
+        architectureChart: "public/images/passgenius-architecture.svg",
         github: '#',
         gitlab: 'https://gitlab.com/microservices-kubernetes',
         external: null,

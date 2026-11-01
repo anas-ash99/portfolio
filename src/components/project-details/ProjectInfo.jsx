@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { X, ZoomIn, ZoomOut } from 'lucide-react';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import SmartTextViewer from './SmartTextViewer';
+import { resolveMediaUrl } from '../../lib/utils';
 
 const ProjectInfo = ({ project }) => {
     const { t, i18n } = useTranslation();
@@ -10,23 +11,24 @@ const ProjectInfo = ({ project }) => {
 
     // Get description based on current language, fallback to English
     const description = project.longDescription?.[i18n.language] || project.longDescription?.['en'] || "";
+    const architectureChartUrl = resolveMediaUrl(project.architectureChart);
 
     return (
         <div>
-            <div className={`grid grid-cols-1 ${project.architectureChart ? 'lg:grid-cols-[4fr_3fr]' : ''} gap-8 items-start mb-8`}>
+            <div className={`grid grid-cols-1 ${architectureChartUrl ? 'lg:grid-cols-[4fr_3fr]' : ''} gap-8 items-start mb-8`}>
                 <div className="bg-navy-800 rounded-lg">
                     <h2 className="text-2xl font-bold text-slate-200 mb-4 px-6 pt-6">{t('projectDetails.description')}</h2>
                     <SmartTextViewer rawText={description} />
                 </div>
 
-                {project.architectureChart && (
+                {architectureChartUrl && (
                     <div className="w-full">
                         <div
                             className="relative rounded-lg overflow-hidden border border-slate-700 shadow-lg bg-navy-900/50 cursor-pointer group"
                             onClick={() => setIsImageOpen(true)}
                         >
                             <img
-                                src={project.architectureChart}
+                                src={architectureChartUrl}
                                 alt={t('projectDetails.systemArchitecture')}
                                 className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-300"
                             />
@@ -74,7 +76,7 @@ const ProjectInfo = ({ project }) => {
                                     </div>
                                     <TransformComponent wrapperClass="!w-full !h-full flex items-center justify-center" contentClass="!w-full !h-full flex items-center justify-center">
                                         <img
-                                            src={project.architectureChart}
+                                            src={architectureChartUrl}
                                             alt={t('projectDetails.systemArchitecture')}
                                             className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
                                         />

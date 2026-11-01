@@ -3,9 +3,14 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 const skills = [
-    "Android Mobile Development (Jetpack Compose)", "Cloud-Native Applications",
-    "System Design & Architecture", "DevOps", "Databases",
-    "Prompt Engineering", "Scrum / Teamwork", "Quick Learner"
+    "Kotlin & Jetpack Compose",
+    "Backend Microservices (Go / Java)",
+    "Real-Time Systems (WebSockets / WebRTC)",
+    "Distributed Messaging (Kafka / RabbitMQ)",
+    "Databases & Caching (MongoDB / Redis)",
+    "Systems Programming (C / C++)",
+    "DevOps & Containers (Docker / CI/CD)",
+    "Cloud Architecture & System Design"
 ];
 
 const Skills = () => {

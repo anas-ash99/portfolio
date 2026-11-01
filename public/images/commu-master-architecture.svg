@@ -1,0 +1,309 @@
+<?xml version="1.0" standalone="no"?>
+<svg id="master-arch-svg" viewBox="0 0 1260 780" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Inter', sans-serif; background: #0d1322; border-radius: 8px;">
+          <defs>
+            <linearGradient id="gradClient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#1e3a8a"/>
+              <stop offset="100%" stop-color="#172554"/>
+            </linearGradient>
+            <linearGradient id="gradGateway" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#065f46"/>
+              <stop offset="100%" stop-color="#064e3b"/>
+            </linearGradient>
+            <linearGradient id="gradService" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#1e293b"/>
+              <stop offset="100%" stop-color="#0f172a"/>
+            </linearGradient>
+            <linearGradient id="gradBroker" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#78350f"/>
+              <stop offset="100%" stop-color="#451a03"/>
+            </linearGradient>
+            <linearGradient id="gradDb" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#14532d"/>
+              <stop offset="100%" stop-color="#052e16"/>
+            </linearGradient>
+            <linearGradient id="gradCloud" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#4c1d95"/>
+              <stop offset="100%" stop-color="#2e1065"/>
+            </linearGradient>
+
+            <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 10 5 L 0 9 z" fill="#3b82f6"/>
+            </marker>
+            <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 10 5 L 0 9 z" fill="#06b6d4"/>
+            </marker>
+            <marker id="arrowAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 10 5 L 0 9 z" fill="#f59e0b"/>
+            </marker>
+            <marker id="arrowEmerald" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 10 5 L 0 9 z" fill="#10b981"/>
+            </marker>
+            <marker id="arrowPurple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 10 5 L 0 9 z" fill="#a855f7"/>
+            </marker>
+            <marker id="arrowRose" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 10 5 L 0 9 z" fill="#f43f5e"/>
+            </marker>
+          </defs>
+
+          <!-- Background Grid -->
+          <pattern id="smallGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1" fill="#1e293b"/>
+          </pattern>
+          <rect width="1260" height="780" fill="url(#smallGrid)"/>
+
+          <!-- Zone Containers -->
+          <rect x="20" y="20" width="235" height="740" rx="12" fill="rgba(30, 41, 59, 0.35)" stroke="#334155" stroke-dasharray="6,4"/>
+          <text x="36" y="46" fill="#94a3b8" font-size="11" font-weight="700" letter-spacing="1.5">CLIENT TIER (ANDROID)</text>
+
+          <rect x="275" y="20" width="165" height="740" rx="12" fill="rgba(16, 185, 129, 0.05)" stroke="#065f46" stroke-dasharray="6,4"/>
+          <text x="290" y="46" fill="#34d399" font-size="11" font-weight="700" letter-spacing="1.5">EDGE GATEWAY</text>
+
+          <rect x="460" y="20" width="290" height="740" rx="12" fill="rgba(59, 130, 246, 0.05)" stroke="#1e3a8a" stroke-dasharray="6,4"/>
+          <text x="476" y="46" fill="#60a5fa" font-size="11" font-weight="700" letter-spacing="1.5">GO MICROSERVICES TIER</text>
+
+          <rect x="770" y="20" width="220" height="740" rx="12" fill="rgba(245, 158, 11, 0.05)" stroke="#78350f" stroke-dasharray="6,4"/>
+          <text x="786" y="46" fill="#fbbf24" font-size="11" font-weight="700" letter-spacing="1.5">MESSAGE BROKER</text>
+
+          <rect x="1010" y="20" width="230" height="740" rx="12" fill="rgba(139, 92, 246, 0.05)" stroke="#4c1d95" stroke-dasharray="6,4"/>
+          <text x="1026" y="46" fill="#c084fc" font-size="11" font-weight="700" letter-spacing="1.5">DATA &amp; CLOUD PROVIDERS</text>
+
+          <!-- ==================== 1. ANDROID CLIENT ==================== -->
+          <rect x="35" y="75" width="205" height="650" rx="10" fill="url(#gradClient)" stroke="#3b82f6" stroke-width="2"/>
+          <text x="137" y="104" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="800">Commu Android App</text>
+          <text x="137" y="122" text-anchor="middle" fill="#93c5fd" font-size="11">Kotlin • Jetpack Compose • Hilt</text>
+
+          <!-- Sub-boxes inside Android -->
+          <rect x="48" y="140" width="179" height="72" rx="6" fill="#0f172a" stroke="#3b82f6" stroke-width="1"/>
+          <text x="137" y="160" text-anchor="middle" fill="#60a5fa" font-size="12" font-weight="700">UI &amp; Presentation Layer</text>
+          <text x="137" y="177" text-anchor="middle" fill="#cbd5e1" font-size="10.5">MainActivity • CallActivity (PiP)</text>
+          <text x="137" y="193" text-anchor="middle" fill="#94a3b8" font-size="10">App / Home / Chat / Call ViewModels</text>
+
+          <rect x="48" y="226" width="179" height="75" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+          <text x="137" y="246" text-anchor="middle" fill="#34d399" font-size="12" font-weight="700">Offline-First Local Storage</text>
+          <text x="137" y="263" text-anchor="middle" fill="#cbd5e1" font-size="10.5">Room SQLite (AppDatabase)</text>
+          <text x="137" y="279" text-anchor="middle" fill="#94a3b8" font-size="10">UserDao • ChatDao • MessageDao • CallDao</text>
+          <text x="137" y="293" text-anchor="middle" fill="#94a3b8" font-size="9.5">+ Preferences DataStore (UserStore)</text>
+
+          <rect x="48" y="315" width="179" height="82" rx="6" fill="#0f172a" stroke="#60a5fa" stroke-width="1"/>
+          <text x="137" y="335" text-anchor="middle" fill="#93c5fd" font-size="12" font-weight="700">Retrofit2 HTTP Clients</text>
+          <text x="137" y="352" text-anchor="middle" fill="#cbd5e1" font-size="10.5">UserApi • ChatApi</text>
+          <text x="137" y="368" text-anchor="middle" fill="#cbd5e1" font-size="10.5">MessageApi • CallApi</text>
+          <text x="137" y="384" text-anchor="middle" fill="#94a3b8" font-size="9.5">OkHttp (30s R/W Timeout)</text>
+
+          <rect x="48" y="411" width="179" height="76" rx="6" fill="#0f172a" stroke="#06b6d4" stroke-width="1"/>
+          <text x="137" y="431" text-anchor="middle" fill="#22d3ee" font-size="12" font-weight="700">OkHttp WebSocketClient</text>
+          <text x="137" y="448" text-anchor="middle" fill="#cbd5e1" font-size="10.5">/ws/connect?clientID={id}</text>
+          <text x="137" y="464" text-anchor="middle" fill="#94a3b8" font-size="10">SharedFlow&lt;WebSocketEvent&gt;</text>
+          <text x="137" y="478" text-anchor="middle" fill="#94a3b8" font-size="9.5">Auto-Reconnect (3s) + BingPoller</text>
+
+          <rect x="48" y="501" width="179" height="92" rx="6" fill="#0f172a" stroke="#f43f5e" stroke-width="1"/>
+          <text x="137" y="521" text-anchor="middle" fill="#fb7185" font-size="12" font-weight="700">WebRTC Media Engine</text>
+          <text x="137" y="538" text-anchor="middle" fill="#cbd5e1" font-size="10.5">WebRtcEngine (PeerConnection)</text>
+          <text x="137" y="554" text-anchor="middle" fill="#94a3b8" font-size="10">Camera2 HD 720p@30 • EglBase</text>
+          <text x="137" y="570" text-anchor="middle" fill="#cbd5e1" font-size="10.5">Hardware AEC &amp; Noise Suppress</text>
+          <text x="137" y="584" text-anchor="middle" fill="#94a3b8" font-size="9.5">STUN: stun.l.google.com:19302</text>
+
+          <rect x="48" y="607" width="179" height="68" rx="6" fill="#0f172a" stroke="#a855f7" stroke-width="1"/>
+          <text x="137" y="627" text-anchor="middle" fill="#c084fc" font-size="12" font-weight="700">FBMessagingService</text>
+          <text x="137" y="644" text-anchor="middle" fill="#cbd5e1" font-size="10.5">Push Receiver (When Offline)</text>
+          <text x="137" y="660" text-anchor="middle" fill="#94a3b8" font-size="10">DeepLink Chat &amp; FullScreen Call</text>
+
+          <!-- ==================== 2. NGINX GATEWAY ==================== -->
+          <rect x="288" y="150" width="138" height="440" rx="10" fill="url(#gradGateway)" stroke="#10b981" stroke-width="2"/>
+          <text x="357" y="185" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="800">Nginx Gateway</text>
+          <text x="357" y="203" text-anchor="middle" fill="#6ee7b7" font-size="11" font-family="JetBrains Mono">Port 8080 → :80</text>
+
+          <rect x="298" y="225" width="118" height="46" rx="5" fill="#064e3b" stroke="#34d399"/>
+          <text x="357" y="245" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">/users/*</text>
+          <text x="357" y="261" text-anchor="middle" fill="#a7f3d0" font-size="10" font-family="JetBrains Mono">→ :8081</text>
+
+          <rect x="298" y="285" width="118" height="46" rx="5" fill="#064e3b" stroke="#34d399"/>
+          <text x="357" y="305" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">/chats/*</text>
+          <text x="357" y="321" text-anchor="middle" fill="#a7f3d0" font-size="10" font-family="JetBrains Mono">→ :8082</text>
+
+          <rect x="298" y="345" width="118" height="46" rx="5" fill="#064e3b" stroke="#34d399"/>
+          <text x="357" y="365" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">/calls/*</text>
+          <text x="357" y="381" text-anchor="middle" fill="#a7f3d0" font-size="10" font-family="JetBrains Mono">→ :8085</text>
+
+          <rect x="298" y="405" width="118" height="58" rx="5" fill="#064e3b" stroke="#22d3ee"/>
+          <text x="357" y="425" text-anchor="middle" fill="#22d3ee" font-size="11" font-weight="700">/ws/*</text>
+          <text x="357" y="440" text-anchor="middle" fill="#a7f3d0" font-size="9.5">HTTP 1.1 Upgrade</text>
+          <text x="357" y="454" text-anchor="middle" fill="#a7f3d0" font-size="10" font-family="JetBrains Mono">→ :8084</text>
+
+          <rect x="298" y="477" width="118" height="46" rx="5" fill="#064e3b" stroke="#34d399"/>
+          <text x="357" y="497" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">/notifications/*</text>
+          <text x="357" y="513" text-anchor="middle" fill="#a7f3d0" font-size="10" font-family="JetBrains Mono">→ :8083</text>
+
+          <!-- ==================== 3. GO MICROSERVICES ==================== -->
+          <!-- User Service -->
+          <rect x="478" y="75" width="254" height="110" rx="10" fill="url(#gradService)" stroke="#3b82f6" stroke-width="2"/>
+          <text x="494" y="100" fill="#60a5fa" font-size="14" font-weight="800">user-service</text>
+          <text x="716" y="100" text-anchor="end" fill="#93c5fd" font-size="11" font-family="JetBrains Mono">:8081</text>
+          <text x="494" y="120" fill="#cbd5e1" font-size="11">• CRUD Users, Friends &amp; FCM Tokens</text>
+          <text x="494" y="137" fill="#cbd5e1" font-size="11">• Internal HTTP provider for WS &amp; Push</text>
+          <text x="494" y="154" fill="#94a3b8" font-size="10" font-family="JetBrains Mono">GET /{id}/friends/ids | /{id}/fcm-token</text>
+
+          <!-- Chat Service -->
+          <rect x="478" y="205" width="254" height="115" rx="10" fill="url(#gradService)" stroke="#06b6d4" stroke-width="2"/>
+          <text x="494" y="230" fill="#22d3ee" font-size="14" font-weight="800">chat-service</text>
+          <text x="716" y="230" text-anchor="end" fill="#67e8f9" font-size="11" font-family="JetBrains Mono">:8082</text>
+          <text x="494" y="250" fill="#cbd5e1" font-size="11">• Chat room creation &amp; history queries</text>
+          <text x="494" y="267" fill="#cbd5e1" font-size="11">• Async message ingestion via RabbitMQ</text>
+          <text x="494" y="284" fill="#cbd5e1" font-size="11">• Stamp DeliveredAt &amp; fan-out to WS</text>
+          <text x="494" y="302" fill="#94a3b8" font-size="10" font-family="JetBrains Mono">POST /message → save_message_queue</text>
+
+          <!-- Call Service -->
+          <rect x="478" y="340" width="254" height="120" rx="10" fill="url(#gradService)" stroke="#f43f5e" stroke-width="2"/>
+          <text x="494" y="365" fill="#fb7185" font-size="14" font-weight="800">call-service</text>
+          <text x="716" y="365" text-anchor="end" fill="#fda4af" font-size="11" font-family="JetBrains Mono">:8085</text>
+          <text x="494" y="385" fill="#cbd5e1" font-size="11">• WebRTC Signaling (Offer, Answer, ICE)</text>
+          <text x="494" y="402" fill="#cbd5e1" font-size="11">• P2P Session Negotiation via RabbitMQ</text>
+          <text x="494" y="419" fill="#cbd5e1" font-size="11">• Call lifecycle state &amp; duration logs</text>
+          <text x="494" y="438" fill="#94a3b8" font-size="10" font-family="JetBrains Mono">POST /offer | /answer | /ice | PATCH /status</text>
+
+          <!-- WS Gateway -->
+          <rect x="478" y="480" width="254" height="125" rx="10" fill="url(#gradService)" stroke="#10b981" stroke-width="2"/>
+          <text x="494" y="505" fill="#34d399" font-size="14" font-weight="800">ws-gateway</text>
+          <text x="716" y="505" text-anchor="end" fill="#6ee7b7" font-size="11" font-family="JetBrains Mono">:8084</text>
+          <text x="494" y="525" fill="#cbd5e1" font-size="11">• Gorilla WS Hub (Multi-session map)</text>
+          <text x="494" y="542" fill="#cbd5e1" font-size="11">• 5s Write ACK Verification per client</text>
+          <text x="494" y="559" fill="#cbd5e1" font-size="11">• 54s Ping / 60s Pong / 10s Cleanup</text>
+          <text x="494" y="576" fill="#cbd5e1" font-size="11">• Offline Fallback Trigger → Notification Q</text>
+          <text x="494" y="593" fill="#94a3b8" font-size="10" font-family="JetBrains Mono">GET /connect?clientID={userId}</text>
+
+          <!-- Notification Service -->
+          <rect x="478" y="625" width="254" height="105" rx="10" fill="url(#gradService)" stroke="#a855f7" stroke-width="2"/>
+          <text x="494" y="650" fill="#c084fc" font-size="14" font-weight="800">notification-service</text>
+          <text x="716" y="650" text-anchor="end" fill="#d8b4fe" font-size="11" font-family="JetBrains Mono">:8083</text>
+          <text x="494" y="670" fill="#cbd5e1" font-size="11">• Consumes offline fallback queues</text>
+          <text x="494" y="687" fill="#cbd5e1" font-size="11">• Fetches target FCM token via HTTP</text>
+          <text x="494" y="704" fill="#cbd5e1" font-size="11">• Dispatches Firebase Admin SDK push</text>
+
+          <!-- ==================== 4. RABBITMQ BROKER ==================== -->
+          <rect x="786" y="75" width="188" height="655" rx="10" fill="url(#gradBroker)" stroke="#f59e0b" stroke-width="2"/>
+          <text x="880" y="102" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="800">RabbitMQ Broker</text>
+          <text x="880" y="119" text-anchor="middle" fill="#fde68a" font-size="10.5" font-family="JetBrains Mono">AMQP :5672 | UI :15672</text>
+
+          <!-- Queue Pills inside RabbitMQ -->
+          <g font-family="JetBrains Mono" font-size="9.5">
+            <rect x="798" y="138" width="164" height="42" rx="5" fill="#1c1917" stroke="#f59e0b"/>
+            <text x="880" y="156" text-anchor="middle" fill="#fbbf24" font-weight="700">save_message_queue</text>
+            <text x="880" y="170" text-anchor="middle" fill="#a8a29e" font-size="8.5">chat-svc ➔ chat-svc</text>
+
+            <rect x="798" y="190" width="164" height="42" rx="5" fill="#1c1917" stroke="#22d3ee"/>
+            <text x="880" y="208" text-anchor="middle" fill="#67e8f9" font-weight="700">send_msg_via_websocket</text>
+            <text x="880" y="222" text-anchor="middle" fill="#a8a29e" font-size="8.5">chat-svc ➔ ws-gateway</text>
+
+            <rect x="798" y="242" width="164" height="42" rx="5" fill="#1c1917" stroke="#10b981"/>
+            <text x="880" y="260" text-anchor="middle" fill="#34d399" font-weight="700">online_status_change</text>
+            <text x="880" y="274" text-anchor="middle" fill="#a8a29e" font-size="8.5">ws-gateway ➔ ws-gateway</text>
+
+            <rect x="798" y="294" width="164" height="42" rx="5" fill="#1c1917" stroke="#f43f5e"/>
+            <text x="880" y="312" text-anchor="middle" fill="#fb7185" font-weight="700">request_call</text>
+            <text x="880" y="326" text-anchor="middle" fill="#a8a29e" font-size="8.5">call-svc ➔ ws-gateway</text>
+
+            <rect x="798" y="346" width="164" height="42" rx="5" fill="#1c1917" stroke="#f43f5e"/>
+            <text x="880" y="364" text-anchor="middle" fill="#fb7185" font-weight="700">answer_call</text>
+            <text x="880" y="378" text-anchor="middle" fill="#a8a29e" font-size="8.5">call-svc ➔ ws-gateway</text>
+
+            <rect x="798" y="398" width="164" height="42" rx="5" fill="#1c1917" stroke="#f43f5e"/>
+            <text x="880" y="416" text-anchor="middle" fill="#fb7185" font-weight="700">ice_candidate</text>
+            <text x="880" y="430" text-anchor="middle" fill="#a8a29e" font-size="8.5">call-svc ➔ ws-gateway</text>
+
+            <rect x="798" y="450" width="164" height="42" rx="5" fill="#1c1917" stroke="#f43f5e"/>
+            <text x="880" y="468" text-anchor="middle" fill="#fb7185" font-weight="700">update_call_status</text>
+            <text x="880" y="482" text-anchor="middle" fill="#a8a29e" font-size="8.5">call-svc (x2) ➔ ws-gateway</text>
+
+            <rect x="798" y="516" width="164" height="46" rx="5" fill="#1c1917" stroke="#a855f7"/>
+            <text x="880" y="535" text-anchor="middle" fill="#c084fc" font-weight="700">send_msg_via_notification</text>
+            <text x="880" y="550" text-anchor="middle" fill="#a8a29e" font-size="8.5">ws-gw (fallback) ➔ notif-svc</text>
+
+            <rect x="798" y="572" width="164" height="46" rx="5" fill="#1c1917" stroke="#a855f7"/>
+            <text x="880" y="591" text-anchor="middle" fill="#c084fc" font-weight="700">request_call_via_notif...</text>
+            <text x="880" y="606" text-anchor="middle" fill="#a8a29e" font-size="8.5">ws-gw (fallback) ➔ notif-svc</text>
+
+            <rect x="798" y="628" width="164" height="46" rx="5" fill="#1c1917" stroke="#a855f7"/>
+            <text x="880" y="647" text-anchor="middle" fill="#c084fc" font-weight="700">update_Call_status_via...</text>
+            <text x="880" y="662" text-anchor="middle" fill="#a8a29e" font-size="8.5">ws-gw (fallback) ➔ notif-svc</text>
+          </g>
+
+          <!-- ==================== 5. DATA & EXTERNAL CLOUD ==================== -->
+          <!-- MongoDB -->
+          <rect x="1025" y="75" width="200" height="245" rx="10" fill="url(#gradDb)" stroke="#10b981" stroke-width="2"/>
+          <text x="1125" y="103" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="800">MongoDB Cluster</text>
+          <text x="1125" y="120" text-anchor="middle" fill="#6ee7b7" font-size="10.5" font-family="JetBrains Mono">DB: "commu" | :27018→27017</text>
+
+          <rect x="1040" y="136" width="170" height="36" rx="5" fill="#052e16" stroke="#34d399"/>
+          <text x="1125" y="158" text-anchor="middle" fill="#a7f3d0" font-size="11" font-family="JetBrains Mono">users collection</text>
+
+          <rect x="1040" y="180" width="170" height="36" rx="5" fill="#052e16" stroke="#34d399"/>
+          <text x="1125" y="202" text-anchor="middle" fill="#a7f3d0" font-size="11" font-family="JetBrains Mono">chats collection</text>
+
+          <rect x="1040" y="224" width="170" height="36" rx="5" fill="#052e16" stroke="#34d399"/>
+          <text x="1125" y="246" text-anchor="middle" fill="#a7f3d0" font-size="11" font-family="JetBrains Mono">messages collection</text>
+
+          <rect x="1040" y="268" width="170" height="36" rx="5" fill="#052e16" stroke="#34d399"/>
+          <text x="1125" y="290" text-anchor="middle" fill="#a7f3d0" font-size="11" font-family="JetBrains Mono">calls collection</text>
+
+          <!-- WebRTC / Google STUN -->
+          <rect x="1025" y="355" width="200" height="150" rx="10" fill="url(#gradCloud)" stroke="#f43f5e" stroke-width="2"/>
+          <text x="1125" y="383" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="800">WebRTC P2P &amp; STUN</text>
+          <text x="1125" y="406" text-anchor="middle" fill="#fda4af" font-size="11">Google STUN Server</text>
+          <text x="1125" y="424" text-anchor="middle" fill="#cbd5e1" font-size="9.5" font-family="JetBrains Mono">stun.l.google.com:19302</text>
+          <text x="1125" y="450" text-anchor="middle" fill="#fda4af" font-size="11">Direct Peer-to-Peer Media</text>
+          <text x="1125" y="468" text-anchor="middle" fill="#cbd5e1" font-size="9.5">Encrypted SRTP Audio/Video</text>
+          <text x="1125" y="484" text-anchor="middle" fill="#cbd5e1" font-size="9.5">Unified Plan SDP + Trickle ICE</text>
+
+          <!-- Firebase Cloud Messaging -->
+          <rect x="1025" y="545" width="200" height="165" rx="10" fill="url(#gradCloud)" stroke="#a855f7" stroke-width="2"/>
+          <text x="1125" y="575" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="800">Firebase Cloud (FCM)</text>
+          <text x="1125" y="595" text-anchor="middle" fill="#d8b4fe" font-size="11">Firebase Admin Go SDK v4</text>
+          <text x="1125" y="618" text-anchor="middle" fill="#cbd5e1" font-size="10.5">• Data Payloads:</text>
+          <text x="1125" y="636" text-anchor="middle" fill="#e9d5ff" font-size="10" font-family="JetBrains Mono">type: "chat_message"</text>
+          <text x="1125" y="652" text-anchor="middle" fill="#e9d5ff" font-size="10" font-family="JetBrains Mono">type: "request_call"</text>
+          <text x="1125" y="668" text-anchor="middle" fill="#e9d5ff" font-size="10" font-family="JetBrains Mono">type: "update_call_status"</text>
+
+          <!-- ==================== CONNECTOR ARROWS ==================== -->
+          <!-- Client -> Nginx HTTP -->
+          <line x1="240" y1="350" x2="286" y2="350" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+          <text x="263" y="342" text-anchor="middle" fill="#60a5fa" font-size="9.5" font-weight="700">REST</text>
+
+          <!-- Client <-> Nginx WS -->
+          <line x1="240" y1="435" x2="286" y2="435" stroke="#06b6d4" stroke-width="2.5" marker-start="url(#arrowCyan)" marker-end="url(#arrowCyan)"/>
+          <text x="263" y="427" text-anchor="middle" fill="#22d3ee" font-size="9.5" font-weight="700">WS</text>
+
+          <!-- Nginx -> Microservices -->
+          <path d="M 426 248 L 452 248 L 452 130 L 476 130" fill="none" stroke="#10b981" stroke-width="2" marker-end="url(#arrowEmerald)"/>
+          <path d="M 426 308 L 456 308 L 456 260 L 476 260" fill="none" stroke="#10b981" stroke-width="2" marker-end="url(#arrowEmerald)"/>
+          <path d="M 426 368 L 456 368 L 456 400 L 476 400" fill="none" stroke="#10b981" stroke-width="2" marker-end="url(#arrowEmerald)"/>
+          <path d="M 426 434 L 456 434 L 456 540 L 476 540" fill="none" stroke="#06b6d4" stroke-width="2" marker-end="url(#arrowCyan)"/>
+          <path d="M 426 500 L 448 500 L 448 675 L 476 675" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowEmerald)"/>
+
+          <!-- Internal HTTP calls to user-service -->
+          <path d="M 478 515 L 465 515 L 465 160 L 476 160" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="3,3" marker-end="url(#arrowBlue)"/>
+          <path d="M 478 655 L 460 655 L 460 172 L 476 172" fill="none" stroke="#c084fc" stroke-width="1.5" stroke-dasharray="3,3" marker-end="url(#arrowPurple)"/>
+
+          <!-- Services <-> RabbitMQ -->
+          <line x1="732" y1="245" x2="784" y2="165" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowAmber)"/>
+          <line x1="784" y1="175" x2="732" y2="265" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowAmber)"/>
+          <line x1="732" y1="285" x2="784" y2="210" stroke="#06b6d4" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+          <line x1="732" y1="400" x2="784" y2="365" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrowRose)"/>
+          <line x1="784" y1="365" x2="732" y2="525" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrowRose)"/>
+          <line x1="784" y1="215" x2="732" y2="510" stroke="#06b6d4" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+          <line x1="732" y1="545" x2="784" y2="265" stroke="#10b981" stroke-width="1.8" marker-start="url(#arrowEmerald)" marker-end="url(#arrowEmerald)"/>
+          <line x1="732" y1="575" x2="784" y2="585" stroke="#a855f7" stroke-width="2" marker-end="url(#arrowPurple)"/>
+          <line x1="784" y1="615" x2="732" y2="675" stroke="#a855f7" stroke-width="2" marker-end="url(#arrowPurple)"/>
+
+          <!-- Services -> MongoDB -->
+          <path d="M 732 115 L 1023 150" fill="none" stroke="#10b981" stroke-width="1.8" marker-end="url(#arrowEmerald)"/>
+          <path d="M 732 230 L 1023 215" fill="none" stroke="#10b981" stroke-width="1.8" marker-end="url(#arrowEmerald)"/>
+          <path d="M 732 375 L 1023 285" fill="none" stroke="#10b981" stroke-width="1.8" marker-end="url(#arrowEmerald)"/>
+
+          <!-- Notification Service -> FCM -> Android Client -->
+          <line x1="732" y1="685" x2="1023" y2="635" stroke="#a855f7" stroke-width="2.5" marker-end="url(#arrowPurple)"/>
+          <path d="M 1125 710 L 1125 748 L 137 748 L 137 677" fill="none" stroke="#a855f7" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowPurple)"/>
+          <text x="630" y="742" text-anchor="middle" fill="#c084fc" font-size="10.5" font-weight="700">FCM Push Delivery to Android Device (Wakeup / Heads-Up / Full-Screen Call Intent)</text>
+        </svg>
