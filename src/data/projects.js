@@ -9,7 +9,7 @@ export const projects = [
         github: '#',
         gitlab: 'https://gitlab.com/tidoco',
         architectureChart: "",
-        external: null,
+        external: "https://anas-ash99.github.io/tidoco-website/",
         longDescription: longDescriptions.tidoco,
         tags: ['Kotlin', 'Spring Boot', 'System Design', 'SSE', "Compose multiplatform", 'GCP'],
         media: []
