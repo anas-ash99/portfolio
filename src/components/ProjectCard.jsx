@@ -1,26 +1,36 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { ExternalLink, Github, Gitlab } from 'lucide-react';
+import { ExternalLink, Github, Gitlab, Globe } from 'lucide-react';
 
 const ProjectCard = ({ project }) => {
     const { t } = useTranslation();
+    const websiteUrl = project.websiteUrl || project.website;
 
     return (
         <div className="bg-navy-800 p-6 rounded-lg hover:-translate-y-2 transition-transform duration-300 group relative flex flex-col h-full">
             <Link to={`/project/${project.id}`} className="absolute inset-0 z-0"></Link>
             <div className="flex justify-between items-center mb-4 relative z-10">
-                <div className="flex gap-4">
+                <div className="flex gap-4 items-center">
                     {/* <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-teal-300 transition-colors">
                         <Github className="w-8 h-8" />
                     </a> */}
-                    <a href={project.gitlab} target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-teal-300 transition-colors">
-                        <Gitlab className="w-8 h-8" />
-                    </a>
+                    {project.gitlab && (
+                        <a href={project.gitlab} target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-teal-300 transition-colors">
+                            <Gitlab className="w-8 h-8" />
+                        </a>
+                    )}
+                    {websiteUrl && (
+                        <a href={websiteUrl} target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-teal-300 transition-colors" title={t('projectDetails.website')}>
+                            <Globe className="w-7 h-7" />
+                        </a>
+                    )}
                 </div>
-                <a href={project.external} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-teal-400 transition-colors">
-                    <ExternalLink className="w-6 h-6" />
-                </a>
+                {project.external && project.external !== '#' && (
+                    <a href={project.external} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-teal-400 transition-colors">
+                        <ExternalLink className="w-6 h-6" />
+                    </a>
+                )}
             </div>
             <div className="flex items-center gap-2 mb-2 flex-wrap">
                 <h3 className="text-xl font-bold text-slate-200 group-hover:text-teal-400 transition-colors">

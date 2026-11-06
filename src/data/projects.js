@@ -8,8 +8,9 @@ export const projects = [
         status: 'in-progress',
         github: '#',
         gitlab: 'https://gitlab.com/tidoco',
+        websiteUrl: "https://anas-ash99.github.io/tidoco-website/",
         architectureChart: "",
-        external: "https://anas-ash99.github.io/tidoco-website/",
+        external: null,
         longDescription: longDescriptions.tidoco,
         tags: ['Kotlin', 'Spring Boot', 'System Design', 'SSE', "Compose multiplatform", 'GCP'],
         media: []
@@ -20,6 +21,7 @@ export const projects = [
         key: 'commu',
         github: '#',
         gitlab: 'https://gitlab.com/commu-app',
+        websiteUrl: null,
         architectureChart: "public/images/commu-master-architecture.svg",
         external: null,
         tags: ['Go', 'WebSocket', 'Message Queue', 'WebRTC'],
@@ -37,6 +39,7 @@ export const projects = [
         key: 'astra',
         github: '#',
         gitlab: 'https://gitlab.com/astra-ai',
+        websiteUrl: null,
         external: 'https://www.linkedin.com/posts/anas-ashraf-dev_androiddev-kotlin-sideproject-activity-7173628132602560512-C37L?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC2kNGoBuvK-hWWFEq5pWtNd_JnRg1J4Nhw',
         tags: ['Jetpack Compose', 'AI', 'Kotlin'],
         longDescription: longDescriptions.astra,
@@ -75,6 +78,7 @@ export const projects = [
         architectureChart: "https://storage.googleapis.com/portfolio-bucket-99/Zavvo%20design.png",
         github: '#',
         gitlab: 'https://gitlab.com/zavvo',
+        websiteUrl: null,
         external: null,
         tags: ['Java', 'Spring Boot', 'Kafka', 'Kubernetes', 'Android', 'Kotlin', 'SQL', 'NoSQL', 'REST', 'JWT', 'OAuth', 'Docker', 'K8s', 'Jenkins', 'GitLab', 'Jira', 'Confluence', 'Jenkins', 'GitLab', 'Jira', 'Confluence'],
         media: [
@@ -102,6 +106,7 @@ export const projects = [
         architectureChart: "public/images/passgenius-architecture.svg",
         github: '#',
         gitlab: 'https://gitlab.com/microservices-kubernetes',
+        websiteUrl: null,
         external: null,
         longDescription: longDescriptions.microservices,
         tags: ['Java', 'CI/CD', "GO", 'Kubernetes', 'Docker', 'Jenkins', 'GitHub Actions', 'Jira', 'MongoDB', 'PostgreSQL', 'Redis', 'API Gateway']
