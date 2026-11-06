@@ -13,7 +13,24 @@ export const projects = [
         external: null,
         longDescription: longDescriptions.tidoco,
         tags: ['Kotlin', 'Spring Boot', 'System Design', 'SSE', "Compose multiplatform", 'GCP'],
-        media: []
+        media: [
+            {
+                type: 'image',
+                url: 'public/images/tidoco/screenshot_mockup3.png',
+                caption: 'Business Dashboard'
+            },
+            {
+                type: 'image',
+                url: 'public/images/tidoco/screenshot_mockup2.png',
+                caption: 'Business Calendar Page'
+            },
+            {
+                type: 'image',
+                url: 'public/images/tidoco/screenshot_mockup1.png',
+                caption: 'Client Page'
+            },
+
+        ]
 
     },
     {
@@ -26,13 +43,7 @@ export const projects = [
         external: null,
         tags: ['Go', 'WebSocket', 'Message Queue', 'WebRTC'],
         longDescription: longDescriptions.commu,
-        media: [
-            // {
-            //     type: 'image',
-            //     url: 'public/images/commu-design.png',
-            //     caption: 'Main Chat Interface'
-            // },
-        ]
+
     },
     {
         id: 'astra',
