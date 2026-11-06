@@ -55,6 +55,7 @@
         "notFound": "Project not found",
         "backToProjects": "Back to Projects",
         "sourceCode": "Source Code",
+        "website": "Website",
         "description": "Description",
         "systemArchitecture": "System Architecture",
         "clickToExpand": "Click to expand",
